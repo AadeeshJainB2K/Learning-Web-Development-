@@ -1,0 +1,26 @@
+*{
+    color: white;
+}
+#Box{background-color:#0F1111;
+    border: 10px groove grey;
+    height: 50px;
+}
+img{
+    padding: 17.5px 0px 0px 20px;
+    width: 90px;
+}
+pre{
+    padding: 0px 0px 50px 10px;
+}
+button{
+    background-color: #f08804;
+}
+a{
+    text-decoration: none;
+    margin: 0px 184px 0px 0px;
+}
+input{
+    background-color: white;
+    color: black;
+}
+

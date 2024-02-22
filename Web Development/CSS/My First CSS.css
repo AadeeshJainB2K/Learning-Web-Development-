@@ -1,0 +1,22 @@
+*{
+    color:#ff0000;
+}
+body{
+    background-color:#ffff55;
+}
+head{
+    background-color: blue;
+}
+button{
+    color: #ff0000;
+    background-color: aqua;
+}
+h1{
+    color:deepskyblue;
+}
+#headingOne{
+    color: #ff0000;
+}
+.Red{
+    color: blue;
+}

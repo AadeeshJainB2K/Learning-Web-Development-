@@ -1,0 +1,12 @@
+img{
+    width: 100px;
+    padding: 18px 0px 0px 18px ;
+}
+#Nav_Bar{
+    background-color: black;
+    height: 60px ;
+    color: white;
+}
+a{
+    color : white
+}

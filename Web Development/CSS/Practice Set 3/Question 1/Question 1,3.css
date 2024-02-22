@@ -1,6 +1,4 @@
-.Those{
-    
-}
+
 img{
     width: 100px;
     padding: 18px 0px 0px 18px ;
@@ -15,7 +13,6 @@ a{
     color : white ;
     text-decoration:none;
     text-align: center;
-    
 }
 button{
     background-color: #f08804;
@@ -28,6 +25,7 @@ button{
     border-style: groove;
     border-color:#f08804;
     border-width: 30px;
+    display: inline-block;
 }
 #Div_1{
     background-color: rgba(0, 255, 255,0.5);
@@ -38,8 +36,8 @@ button{
 #Div_3{
     background-color: rgba(30, 255, 0, 0.5);
 }
-main{
-    height: 1844.5px;
+#Div_4{
+    background-color: rgba(0, 4, 255, 0.5);
 }
 footer{
     background-color: black;
@@ -51,5 +49,5 @@ footer{
     padding: 20px 0px 0px 0px;
 }
 #Logo{
-    
+    visibility:inline;
 }

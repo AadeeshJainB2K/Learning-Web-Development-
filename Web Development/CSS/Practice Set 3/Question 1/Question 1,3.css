@@ -1,3 +1,6 @@
+.Those{
+    
+}
 img{
     width: 100px;
     padding: 18px 0px 0px 18px ;
@@ -8,5 +11,45 @@ img{
     color: white;
 }
 a{
-    color : white
+    margin: 0px 200px 0px 0px ;
+    color : white ;
+    text-decoration:none;
+    text-align: center;
+    
+}
+button{
+    background-color: #f08804;
+    margin: bottom 20px;
+}
+.Those_3_Divs{
+    height: 500px;
+    width: 500px;
+    margin: 50px;
+    border-style: groove;
+    border-color:#f08804;
+    border-width: 30px;
+}
+#Div_1{
+    background-color: rgba(0, 255, 255,0.5);
+}
+#Div_2{
+    background-color: rgba(255, 0, 0, 0.5);
+}
+#Div_3{
+    background-color: rgba(30, 255, 0, 0.5);
+}
+main{
+    height: 1844.5px;
+}
+footer{
+    background-color: black;
+    height: 60px ;
+    color: white;
+}
+#CopyWrite{
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+}
+#Logo{
+    
 }

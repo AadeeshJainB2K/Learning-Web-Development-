@@ -6,6 +6,8 @@ img{
     background-color: black;
     height: 60px ;
     color: white;
+    position: sticky;
+    top: 0px;
 }
 
 a{
@@ -40,7 +42,7 @@ button{
 #Div_4{
     background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img22/dec/pc/sbc/440X460_6.jpg);
 }
-footer{
+#CopyWrite{
     background-color: black;
     height: 60px ;
     color: white;
@@ -76,4 +78,8 @@ footer{
     background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img22/dec/pc/sbc/440X460_6.jpg);
     width: 465px;
     height: 465px;
+}
+#Back{
+    background-color: rgba(0, 0, 0, 0.604);
+    height: 40px;
 }

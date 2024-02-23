@@ -28,7 +28,8 @@ button{
     display: inline-block;
 }
 #Div_1{
-    background-image:url(https://images-eu.ssl-images-amazon.com/images/G/31/img22/dec/pc/sbc/440X460_4.jpg);
+    width: 485px;
+    height: 485px;
 }
 #Div_2{
     background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img22/dec/pc/sbc/440X460_2.jpg);
@@ -55,4 +56,24 @@ footer{
     position: relative;
     bottom: 12.5px;
     border-image: auto;
+}
+#Anch1{
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img22/dec/pc/sbc/440X460_4.jpg);
+    width: 465px;
+    height: 465px;
+}
+#Anch2{
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img22/dec/pc/sbc/440X460_2.jpg);
+    width: 465px;
+    height: 465px;
+}
+#Anch3{
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img22/dec/pc/sbc/440X460_1.jpg);
+    width: 465px;
+    height: 465px;
+}
+#Anch4{
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img22/dec/pc/sbc/440X460_6.jpg);
+    width: 465px;
+    height: 465px;
 }

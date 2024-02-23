@@ -51,3 +51,7 @@ footer{
 #Logo{
     visibility:inline;
 }
+.Those{
+    position: relative;
+    top: -12.5px;
+}

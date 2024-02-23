@@ -1,0 +1,91 @@
+img{
+    width: 100px;
+    padding: 18px 0px 0px 18px ;
+}
+#Nav_Bar{
+    background-color: black;
+    height: 60px ;
+    color: white;
+    position: sticky;
+    top: 0px;
+}
+
+a{
+    margin: 0px 200px 0px 0px ;
+    color : white ;
+    text-decoration:none;
+    text-align: center;
+}
+button{
+    background-color: #f08804;
+    margin: bottom 20px;
+}
+.Those_3_Divs{
+    height: 500px;
+    width: 500px;
+    margin: 50px;
+    border-style: groove;
+    border-color:#f08804;
+    border-width: 30px;
+    display: inline-block;
+}
+#Div_1{
+    width: 485px;
+    height: 485px;
+}
+#Div_2{
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img22/dec/pc/sbc/440X460_2.jpg);
+}
+#Div_3{
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img22/dec/pc/sbc/440X460_1.jpg);
+}
+#Div_4{
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img22/dec/pc/sbc/440X460_6.jpg);
+}
+#CopyWrite{
+    background-color: black;
+    height: 60px ;
+    color: white;
+    text-align: center;
+    padding: 22.5px 0px 0px 0px;
+}
+#Logo{
+    visibility:inline;
+}
+.Those{
+    position: relative;
+    bottom: 12.5px;
+    border-image: auto;
+}
+#Anch1{
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img22/dec/pc/sbc/440X460_4.jpg);
+    width: 465px;
+    height: 465px;
+}
+#Anch2{
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img22/dec/pc/sbc/440X460_2.jpg);
+    width: 465px;
+    height: 465px;
+}
+#Anch3{
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img22/dec/pc/sbc/440X460_1.jpg);
+    width: 465px;
+    height: 465px;
+}
+#Anch4{
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img22/dec/pc/sbc/440X460_6.jpg);
+    width: 465px;
+    height: 465px;
+}
+#Back{
+    background-color: rgba(0, 0, 0, 0.604);
+    height: 40px;
+    margin: 0px;
+    text-align: center;
+    padding: 20px;
+}
+header{
+    position: fixed;
+    top: 0%;
+    width: 100vw;
+}

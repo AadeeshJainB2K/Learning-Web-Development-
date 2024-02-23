@@ -3,6 +3,8 @@ html{
     background-size: cover;
 }
 div{
-    position: absolute;
+    position: fixed;
     right: 10px;
+    background-color: rgb(9, 255, 0);
+    color: rgb(0, 17, 255);
 }

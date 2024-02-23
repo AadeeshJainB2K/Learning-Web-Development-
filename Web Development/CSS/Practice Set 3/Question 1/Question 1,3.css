@@ -28,16 +28,16 @@ button{
     display: inline-block;
 }
 #Div_1{
-    background-color: rgba(0, 255, 255,0.5);
+    background-image:url(https://images-eu.ssl-images-amazon.com/images/G/31/img22/dec/pc/sbc/440X460_4.jpg);
 }
 #Div_2{
-    background-color: rgba(255, 0, 0, 0.5);
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img22/dec/pc/sbc/440X460_2.jpg);
 }
 #Div_3{
-    background-color: rgba(30, 255, 0, 0.5);
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img22/dec/pc/sbc/440X460_1.jpg);
 }
 #Div_4{
-    background-color: rgba(0, 4, 255, 0.5);
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img22/dec/pc/sbc/440X460_6.jpg);
 }
 footer{
     background-color: black;
@@ -54,4 +54,5 @@ footer{
 .Those{
     position: relative;
     bottom: 12.5px;
+    border-image: auto;
 }

@@ -46,10 +46,8 @@ button{
     background-color: black;
     height: 60px ;
     color: white;
-}
-#CopyWrite{
     text-align: center;
-    padding: 20px 0px 0px 0px;
+    padding: 22.5px 0px 0px 0px;
 }
 #Logo{
     visibility:inline;
@@ -82,4 +80,12 @@ button{
 #Back{
     background-color: rgba(0, 0, 0, 0.604);
     height: 40px;
+    margin: 0px;
+    text-align: center;
+    padding: 20px;
+}
+header{
+    position: fixed;
+    top: 0%;
+    width: 100vw;
 }

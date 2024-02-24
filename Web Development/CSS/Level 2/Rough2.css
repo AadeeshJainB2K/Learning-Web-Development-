@@ -1,6 +1,6 @@
 .Boxes{
-    width: 100px;
-    height: 100px;
+    width: 500px;
+    height: 500px;
     display: inline-block;
 }
 #Box1{
@@ -16,7 +16,7 @@
 #Box3{
     position: absolute;
     background-color: rgb(255, 0, 153);
-    top: 100px;
+    top: 200px;
 }   
 #Box4{
    position: fixed;

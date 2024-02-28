@@ -1,0 +1,21 @@
+#Flexbox{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    height: 500px;
+    width: 500px;
+}
+#outerDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 250px;;
+    width: 250px;
+}
+#innerDiv{
+    height: 125px;
+    width: 125px;
+    background-color: red;
+}

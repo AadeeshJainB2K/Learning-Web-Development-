@@ -1,0 +1,21 @@
+body{
+    background-color: rgba(0, 0, 0, 0.644);
+}
+#Navbar{
+    display: flex;
+    height: 60px;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-content:space-evenly;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+}
+img{
+    height: 30px;
+}
+#Box{
+    background-color: red;
+    height: 30px;
+    width: 30px;
+}

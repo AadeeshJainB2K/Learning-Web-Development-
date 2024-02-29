@@ -1,1 +1,1 @@
-console.log(A)
+const name = "aadeesh";

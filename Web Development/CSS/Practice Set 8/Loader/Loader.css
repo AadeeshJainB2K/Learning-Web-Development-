@@ -1,0 +1,24 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+#Ring {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 20px solid rgb(58, 58, 58);
+  border-top: 20px solid rgb(255, 0, 0);
+  animation-name: Loader;
+  animation: Loader 1s steps(100000000) infinite normal;
+}
+@keyframes Loader {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

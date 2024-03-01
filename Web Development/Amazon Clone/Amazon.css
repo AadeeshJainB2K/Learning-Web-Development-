@@ -1,0 +1,20 @@
+* {
+  margin: 0px;
+  font-family: Arial;
+  border: border-box;
+}
+.Navbar {
+  width: 100vw;
+  height: 60px;
+  background-color: #0f1111;
+  color: white;
+}
+#Nav-Logo {
+  height: 30px;
+  width: 180px;
+}
+#Logo {
+  background-image: url("https://www.pngall.com/wp-content/uploads/15/Amazon-Logo-White-Transparent.png");
+  background-size: cover;
+  height: 50px;
+}

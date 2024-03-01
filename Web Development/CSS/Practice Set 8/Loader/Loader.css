@@ -1,5 +1,5 @@
 h1 {
-  margin: 0px 10px 0px 0px;
+  margin: 0px 0px 0px 0px;
 }
 body {
   display: flex;
@@ -15,8 +15,12 @@ body {
   border: 20px solid rgb(154, 154, 154);
   border-top: 20px solid rgb(44, 44, 44);
   animation-name: Loader;
-  animation: Loader 1s steps(100000000) infinite normal;
+  animation: Loader 1s ease-in-out infinite normal;
   margin: 20px;
+  transition-property: all;
+  transition-duration: 5s;
+  transition-timing-function: ease-in-out;
+  transform: rotate(360deg);
 }
 @keyframes Loader {
   from {

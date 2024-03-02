@@ -25,7 +25,9 @@
 }
 .Border {
   border: 2px solid transparent;
+  border-radius: 3px;
 }
 .Border:hover {
-  border: 2px solid white;
+  border: 1.5px solid white;
+  border-radius: 3px;
 }

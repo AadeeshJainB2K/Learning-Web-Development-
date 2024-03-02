@@ -8,11 +8,24 @@
   height: 60px;
   background-color: #0f1111;
   color: white;
+  display: flex;
+  align-items: center;
+}
+#Nav-Logo {
+  height: 60px;
+  width: 113px;
 }
 #Logo {
   display: block;
-  background-image: url("https://www.pngall.com/wp-content/uploads/15/Amazon-Logo-White-Transparent.png");
+  background-image: url("amazon_logo.png");
   background-size: cover;
   height: 50px;
   width: 113px;
+  margin: 3px 3px 0px 0px;
+}
+.Border {
+  border: 2px solid transparent;
+}
+.Border:hover {
+  border: 2px solid white;
 }

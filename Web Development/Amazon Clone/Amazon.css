@@ -3,6 +3,14 @@
   font-family: Arial;
   border: border-box;
 }
+.Border {
+  border: 2px solid transparent;
+  border-radius: 3px;
+}
+.Border:hover {
+  border: 1.5px solid white;
+  border-radius: 3px;
+}
 .Navbar {
   width: 100vw;
   height: 60px;
@@ -23,11 +31,17 @@
   width: 113px;
   margin: 3px 3px 0px 0px;
 }
-.Border {
-  border: 2px solid transparent;
-  border-radius: 3px;
+#Nav-Address {
+  display: flex;
+  height: 50px;
+  width: 90px;
+  flex-wrap: wrap;
 }
-.Border:hover {
-  border: 1.5px solid white;
-  border-radius: 3px;
+#P1 {
+  color: #cccccc;
+  font-size: 12px;
+}
+#P2 {
+  color: #ffffff;
+  font-size: 12px;
 }

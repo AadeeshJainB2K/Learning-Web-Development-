@@ -121,7 +121,6 @@
 .Toolbar_Layout {
   color: white;
   text-decoration: none;
-  font-style: none;
 }
 
 .UpperText {
@@ -131,4 +130,14 @@
 .LowerText {
   font-size: 0.85rem;
   font-weight: 700;
+}
+#Sign_In-Border {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+#Returns-Border {
+  height: 50px;
+  display: flex;
+  align-items: center;
 }

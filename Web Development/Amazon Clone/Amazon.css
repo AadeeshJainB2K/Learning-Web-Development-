@@ -119,11 +119,9 @@
 }
 
 .Toolbar_Layout {
-  height: 40px;
   color: white;
   text-decoration: none;
-  height: 50px;
-  display: flex;
+  font-style: none;
 }
 
 .UpperText {

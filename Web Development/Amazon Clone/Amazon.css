@@ -58,7 +58,9 @@
   width: 90px;
 }
 #Nav-Search-Bar {
+  height: 50px;
 }
 select {
   color: #0f1111;
+  height: 40px;
 }

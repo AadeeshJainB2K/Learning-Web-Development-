@@ -3,14 +3,17 @@
   font-family: Arial;
   border: border-box;
 }
+
 .Border {
   border: 2px solid transparent;
   border-radius: 3px;
 }
+
 .Border:hover {
   border: 1.5px solid white;
   border-radius: 3px;
 }
+
 .Navbar {
   width: 100vw;
   height: 60px;
@@ -18,11 +21,14 @@
   color: white;
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
 }
+
 #Nav-Logo {
   height: 60px;
   width: 113px;
 }
+
 #Logo {
   display: block;
   background-image: url("amazon_logo.png");
@@ -31,6 +37,7 @@
   width: 113px;
   margin: 3px 3px 0px 0px;
 }
+
 #Nav-Address-Border {
   display: flex;
   align-items: center;
@@ -38,38 +45,92 @@
   height: 50px;
   width: 90px;
 }
+
 #Nav-Address {
   display: flex;
   width: 90px;
   flex-wrap: wrap;
 }
+
 #P1 {
   margin-left: 15px;
   margin-bottom: 0px;
   color: #cccccc;
   font-size: 0.85rem;
 }
+
 #P2 {
   color: #ffffff;
   font-size: 1rem;
   margin-left: 5px;
 }
+
 #Icon-India {
   display: flex;
   width: 90px;
 }
+
 #Nav-Search-Bar {
   display: flex;
   height: 50px;
   align-items: center;
   width: 620px;
   height: 40px;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
-select {
+
+#Search-Select {
   color: #0f1111;
   height: 40px;
+  background-color: #e6e6e6;
+  width: 50px;
+  text-align: center;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border: none;
 }
-#Search {
+
+#Search-Select:hover {
+  border: 2px solid #febd68;
+  cursor: pointer;
+}
+
+#Search-Input {
+  height: 38px;
+  border: none;
+  width: 100%;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+}
+
+#Search-Button {
   height: 40px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border: none;
+  width: 45px;
+  font-size: 1.2rem;
+  background-color: #febd68;
+}
+
+#Search-Button:hover {
+  cursor: pointer;
+}
+
+.Toolbar_Layout {
+  height: 40px;
+  color: white;
+  text-decoration: none;
+  height: 50px;
+  display: flex;
+}
+
+.UpperText {
+  font-size: 0.7rem;
+}
+
+.LowerText {
+  font-size: 0.85rem;
+  font-weight: 700;
 }

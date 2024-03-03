@@ -18,6 +18,7 @@
       <div id="Nav-Logo">
         <a href="#" id="Logo" class="Border"></a>
       </div>
+
       <div id="Nav-Address-Border" class="Border">
         <div id="Nav-Address">
           <p id="P1">Deliever To</p>
@@ -27,12 +28,36 @@
           </div>
         </div>
       </div>
-      <div id="Nav-Search-Bar">
-        <select name="All" id="All" title="All">
+
+      <div id="Nav-Search-Bar" class="Hover">
+        <select name="All" id="Search-Select" title="All">
           <option value="All">All</option>
         </select>
-        <input type="text" placeholder="Search Amazon" id="Search" />
-        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+          type="text"
+          placeholder="Search Amazon"
+          id="Search-Input"
+          class="Hover"
+        />
+        <button id="Search-Button">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <div id="Nav-Sign-In" class="Border Toolbar_Layout">
+        <a href="#" id="Nav-Sign-In-Anchor" class="Toolbar_Layout">
+          <p><span id="Hello,Sign in" class="UpperText">Hello,Sign in</span></p>
+          <br />
+          <p id="Accounts & Lists" class="LowerText">Accounts & Lists</p>
+        </a>
+      </div>
+
+      <div id="Returns_&_Orders" class="Border Toolbar_Layout">
+        <a href="#" id="Nav-Returns&Orders" class="Toolbar_Layout">
+          <p><span id="Returns" class="UpperText">Returns</span></p>
+          <br />
+          <p id="& Orders" class="LowerText">& Orders</p>
+        </a>
       </div>
     </div>
   </body>

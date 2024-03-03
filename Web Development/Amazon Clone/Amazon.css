@@ -34,6 +34,7 @@
 #Nav-Address-Border {
   display: flex;
   align-items: center;
+  margin-right: 50px;
   height: 50px;
   width: 90px;
 }
@@ -58,9 +59,17 @@
   width: 90px;
 }
 #Nav-Search-Bar {
+  display: flex;
   height: 50px;
+  align-items: center;
+  width: 620px;
+  height: 40px;
+  justify-content: space-between;
 }
 select {
   color: #0f1111;
+  height: 40px;
+}
+#Search {
   height: 40px;
 }

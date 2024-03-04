@@ -131,13 +131,22 @@
   font-size: 0.85rem;
   font-weight: 700;
 }
+
 #Sign_In-Border {
   height: 50px;
   display: flex;
   align-items: center;
 }
+
 #Returns-Border {
   height: 50px;
   display: flex;
   align-items: center;
+}
+
+#My_Cart {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  height: 50px;
 }

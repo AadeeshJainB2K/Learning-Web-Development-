@@ -46,6 +46,10 @@
   width: 90px;
 }
 
+#Nav-Address-Border:hover {
+  cursor: pointer;
+}
+
 #Nav-Address {
   display: flex;
   width: 90px;
@@ -79,6 +83,10 @@
   justify-content: space-evenly;
 }
 
+#Nav-Search-Bar:hover {
+  border: 2px solid orange;
+}
+
 #Search-Select {
   color: #0f1111;
   height: 40px;
@@ -91,7 +99,6 @@
 }
 
 #Search-Select:hover {
-  border: 2px solid #febd68;
   cursor: pointer;
 }
 
@@ -149,4 +156,19 @@
   display: flex;
   align-items: center;
   height: 50px;
+}
+
+#My_Cart:hover {
+  cursor: pointer;
+}
+
+#Menu-Bar {
+  width: 100vw;
+  height: 39px;
+  background-color: #232f3e;
+  color: white;
+  display: flex;
+}
+
+#Menu {
 }

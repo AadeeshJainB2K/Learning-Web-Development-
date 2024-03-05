@@ -198,6 +198,7 @@
   font-weight: 700;
 }
 
-#Menu-Bar-Blank {
-  width: 50%;
+#Menu-Bar-Options {
+  display: flex;
+  width: 85%;
 }

@@ -169,9 +169,7 @@
   color: white;
   display: flex;
   align-items: center;
-}
-#Menu-Bar:hover {
-  cursor: pointer;
+  justify-content: center;
 }
 
 .Menu-Bar-Layout {
@@ -188,10 +186,18 @@
   margin-right: 10px;
 }
 
+.Menu-Bar-Layout:hover {
+  cursor: pointer;
+}
+
 #Menu-Icon {
   margin-right: 5px;
 }
 
 #Menu {
   font-weight: 700;
+}
+
+#Menu-Bar-Blank {
+  width: 50%;
 }

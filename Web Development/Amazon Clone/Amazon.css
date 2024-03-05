@@ -168,7 +168,30 @@
   background-color: #232f3e;
   color: white;
   display: flex;
+  align-items: center;
+}
+#Menu-Bar:hover {
+  cursor: pointer;
+}
+
+.Menu-Bar-Layout {
+  display: flex;
+  height: 39px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  line-height: 1em;
+  width: fit-content;
+  margin-right: 10px;
+}
+
+#Menu-Icon {
+  margin-right: 5px;
 }
 
 #Menu {
+  font-weight: 700;
 }

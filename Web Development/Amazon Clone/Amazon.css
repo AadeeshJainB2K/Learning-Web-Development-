@@ -213,13 +213,13 @@
   justify-content:center;
   background-image: url(https://m.media-amazon.com/images/I/61CiqVTRBEL._SX3000_.jpg);
   background-size:cover;
-  height: 500px;
+  height: 300px;
 }
 
 #ShopOnIndia{
   background-color: white;
-  height: 30px;
-  width: 90%;
+  height: 40px;
+  width: 80%;
   align-self: flex-end;
   color: black;
   display: flex;
@@ -228,7 +228,10 @@
   text-decoration: none;
 }
 
+#ShopOnIndia_Line{
+  align-self: flex-end;
+}
 #Amazon_in{
   text-decoration: none;
-  color: black;
+  color: rgb(00, 71, 85);
 }

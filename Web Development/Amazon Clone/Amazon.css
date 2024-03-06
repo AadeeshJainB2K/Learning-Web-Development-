@@ -200,5 +200,35 @@
 
 #Menu-Bar-Options {
   display: flex;
-  width: 85%;
+  width: 83%;
+}
+
+#Deals_In_Electronics{
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#Hero_Section{
+  display: flex;
+  justify-content:center;
+  background-image: url(https://m.media-amazon.com/images/I/61CiqVTRBEL._SX3000_.jpg);
+  background-size:cover;
+  height: 500px;
+}
+
+#ShopOnIndia{
+  background-color: white;
+  height: 30px;
+  width: 90%;
+  align-self: flex-end;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+#Amazon_in{
+  text-decoration: none;
+  color: black;
 }

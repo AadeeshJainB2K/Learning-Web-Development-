@@ -203,21 +203,24 @@
   width: 83%;
 }
 
-#Deals_In_Electronics{
+#Deals_In_Electronics {
   font-size: 15px;
   font-weight: 700;
 }
 
-#Hero_Section{
+#Hero_Section {
   display: flex;
-  justify-content:center;
-  background-image: url(https://m.media-amazon.com/images/I/61CiqVTRBEL._SX3000_.jpg);
-  background-size:cover;
+  justify-content: center;
+  background-image: url(https://m.media-amazon.com/images/I/71VBt4eTg3L._SX3000_.jpg);
+  background-size: cover;
+  background: linear-gradient(to-right white);
   height: 300px;
   margin-bottom: 35px;
+  mask-image: linear-gradient(rgba(255, 255, 255, 0.39));
+  margin-bottom: 0px;
 }
 
-#ShopOnIndia{
+#ShopOnIndia {
   background-color: white;
   height: 40px;
   width: 80%;
@@ -227,28 +230,31 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  margin-bottom: 20px;
 }
 
-#ShopOnIndia_Line{
-  align-self: flex-end;
-}
-
-#Amazon_in{
+#Amazon_in {
   text-decoration: none;
   color: rgb(00, 71, 85);
 }
 
 #ShopSection {
-  height:100vh;
+  height: 100vh;
   width: 100vw;
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   align-content: center;
+  background-color: #e3e6e6;
 }
 
-.Box{
+.Box {
   display: inline-block;
-  height: 300px;
-  width: 20%;
+  height: 350px;
+  width: 22%;
   border: 5px groove black;
+  margin-top: 20px;
+}
+
+.All_Boxes {
+  width: 100vw;
 }

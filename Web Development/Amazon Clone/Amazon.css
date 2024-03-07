@@ -26,12 +26,17 @@
 }
 
 #Nav-Logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 60px;
   width: 113px;
 }
 
 #Logo {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: end;
   background-image: url("amazon_logo.png");
   background-size: cover;
   height: 50px;
@@ -120,6 +125,9 @@
   width: 45px;
   font-size: 1.2rem;
   background-color: #febd68;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #Search-Button:hover {
@@ -218,7 +226,6 @@
   background: linear-gradient(to-right white);
   height: 300px;
   margin-bottom: 35px;
-  mask-image: linear-gradient(rgba(255, 255, 255, 0.39));
   margin-bottom: 0px;
 }
 

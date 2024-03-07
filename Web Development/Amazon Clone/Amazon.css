@@ -183,7 +183,7 @@
 
 .Menu-Bar-Layout {
   display: flex;
-  height: 39px;
+  height: 35px;
   width: 60px;
   justify-content: center;
   align-items: center;
@@ -220,7 +220,6 @@
 #Hero_Section {
   display: flex;
   justify-content: center;
-  /* background-image: url(https://m.media-amazon.com/images/I/71VBt4eTg3L._SX3000_.jpg); */
   background-image: url(hero_image.jpg);
   background-size: cover;
   background: linear-gradient(to-right white);
@@ -258,13 +257,17 @@
 
 .Box {
   display: inline-block;
-  height: 350px;
+  height: 450px;
   width: 22%;
-  border: 5px groove black;
   margin-top: 25px;
   display: flex;
   justify-content: center;
   padding: 20px 0px 15px;
+  display: block;
+  background-color: white;
+  overflow-y: hidden;
+  padding: 25px 20px 10px 20px;
+  margin: 17px 10px 10px 10px;
 }
 
 .Shop_Now {
@@ -275,6 +278,57 @@
 #BoxImage1 {
   background-image: url(box1_image.jpg);
   background-size: cover;
-  height: 250px;
-  width: 1500%;
+  height: 350px;
+  overflow-y: hidden;
+  margin: 10px 0px 25px 0px;
+}
+#BoxImage2 {
+  background-image: url(box1_image.jpg);
+  background-size: cover;
+  height: 350px;
+  overflow-y: hidden;
+  margin: 10px 0px 25px 0px;
+}
+#BoxImage3 {
+  background-image: url(box1_image.jpg);
+  background-size: cover;
+  height: 350px;
+  overflow-y: hidden;
+  margin: 10px 0px 25px 0px;
+}
+#BoxImage4 {
+  background-image: url(box1_image.jpg);
+  background-size: cover;
+  height: 350px;
+  overflow-y: hidden;
+  margin: 10px 0px 25px 0px;
+}
+
+#BoxImage5 {
+  background-image: url(box1_image.jpg);
+  background-size: cover;
+  height: 350px;
+  overflow-y: hidden;
+  margin: 10px 0px 25px 0px;
+}
+#BoxImage6 {
+  background-image: url(box1_image.jpg);
+  background-size: cover;
+  height: 350px;
+  overflow-y: hidden;
+  margin: 10px 0px 25px 0px;
+}
+#BoxImage7 {
+  background-image: url(box1_image.jpg);
+  background-size: cover;
+  height: 350px;
+  overflow-y: hidden;
+  margin: 10px 0px 25px 0px;
+}
+#BoxImage8 {
+  background-image: url(box1_image.jpg);
+  background-size: cover;
+  height: 350px;
+  overflow-y: hidden;
+  margin: 10px 0px 25px 0px;
 }

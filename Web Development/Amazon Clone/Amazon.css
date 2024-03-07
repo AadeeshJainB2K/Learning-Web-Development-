@@ -268,22 +268,7 @@
   background-color: white;
   overflow-y: hidden;
   padding: 25px 20px 10px 20px;
-  margin: 17px 10px 0px 10px;
-}
-
-.BoxSec_2 {
-  display: inline-block;
-  height: 450px;
-  width: 22%;
-  margin-top: 25px;
-  display: flex;
-  justify-content: center;
-  padding: 20px 0px 15px;
-  display: block;
-  background-color: white;
-  overflow-y: hidden;
-  padding: 25px 20px 10px 20px;
-  margin: 0px 10px 10px 10px;
+  margin: 25px 10px 0px 10px;
 }
 
 .Shop_Now {

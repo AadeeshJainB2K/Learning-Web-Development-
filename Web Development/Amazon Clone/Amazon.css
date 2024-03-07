@@ -257,8 +257,17 @@
   margin-top: 25px;
   display: flex;
   justify-content: center;
+  padding: 20px 0px 15px;
 }
 
-.All_Boxes {
-  width: 100vw;
+.Shop_Now {
+  text-decoration: none;
+  color: #232f3e;
+}
+
+#BoxImage1 {
+  background-image: url(box1_image.jpg);
+  background-size: cover;
+  height: 250px;
+  width: 1500%;
 }

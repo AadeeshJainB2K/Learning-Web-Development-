@@ -1,1 +1,3 @@
-console.log("Hello World");
+let x = 20
+console.log(x + 20);
+

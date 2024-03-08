@@ -258,7 +258,7 @@
 
 .Box {
   display: inline-block;
-  height: 450px;
+  height: 475px;
   width: 20vw;
   margin-top: 25px;
   display: flex;
@@ -270,10 +270,13 @@
   padding: 25px 20px 10px 20px;
   margin: 25px 10px 0px 10px;
 }
-
+.Box:hover {
+  cursor: pointer;
+}
 .Shop_Now {
   text-decoration: none;
   color: #232f3e;
+  margin-bottom: 20px;
 }
 
 #BoxImage1 {

@@ -355,3 +355,26 @@
 #BackToTop:hover {
   background-color: #485768;
 }
+
+#FooterAccessibility {
+  height: 410px;
+  width: 100vw;
+  background-color: #222f3e;
+  display: flex;
+  align-items: center;
+}
+
+#FooterVerticalRow {
+  height: 320px;
+  width: 100vw;
+  background-color: #222f3e;
+}
+
+.Heading {
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+}
+
+#FooterLinkColoumn1 {
+}

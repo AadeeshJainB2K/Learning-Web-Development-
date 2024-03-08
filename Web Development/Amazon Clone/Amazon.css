@@ -365,12 +365,15 @@
 }
 
 #FooterVerticalRow {
+  display: flex;
+  justify-content: center;
   height: 320px;
   width: 100vw;
   background-color: #222f3e;
 }
 
 .Heading {
+  padding-left: 10px;
   font-weight: 700;
   font-size: 16px;
   color: white;
@@ -378,4 +381,19 @@
 
 #FooterLinkColoumn1 {
   width: 200px;
+}
+
+.FooterAccessibilityLinks {
+  display: block;
+  color: #d9dada;
+  text-decoration: none;
+  margin: 10px 10px 10px 10px;
+}
+
+.FooterAccessibilityLinks:hover {
+  text-decoration: underline;
+}
+
+.FooterLinksSpacer {
+  width: 100px;
 }

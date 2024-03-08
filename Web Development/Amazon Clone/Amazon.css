@@ -337,3 +337,21 @@
   overflow-y: hidden;
   margin: 10px 0px 25px 0px;
 }
+
+#Divider {
+  background-color: #e3e6e6;
+  height: 25px;
+}
+#BackToTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #364759;
+  height: 50px;
+  color: white;
+  text-decoration: none;
+}
+
+#BackToTop:hover {
+  background-color: #485768;
+}

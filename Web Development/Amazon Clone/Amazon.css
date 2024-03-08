@@ -258,7 +258,7 @@
 
 .Box {
   display: inline-block;
-  height: 475px;
+  height: 450px;
   width: 20vw;
   margin-top: 25px;
   display: flex;
@@ -275,7 +275,7 @@
 }
 .Shop_Now {
   text-decoration: none;
-  color: #232f3e;
+  color: #017185;
   margin-bottom: 20px;
 }
 

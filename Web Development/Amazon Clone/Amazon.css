@@ -87,10 +87,11 @@
   width: 620px;
   height: 40px;
   justify-content: space-evenly;
+  border: 2px solid transparent;
 }
 
 #Nav-Search-Bar:hover {
-  border: 2px solid orange;
+  border: 2px solid #ff9900;
 }
 
 #Search-Select {

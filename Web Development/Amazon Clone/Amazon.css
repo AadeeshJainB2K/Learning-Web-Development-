@@ -11,14 +11,14 @@
 }
 
 .Border:hover {
-  border: 1.5px solid white;
+  border: 2px solid white;
   border-radius: 3px;
 }
 
 .Navbar {
   width: 100vw;
   height: 60px;
-  background-color: #0f1111;
+  background-color: #131921;
   color: white;
   display: flex;
   align-items: center;

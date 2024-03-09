@@ -488,6 +488,7 @@
   align-items: flex-start;
   flex-wrap: wrap;
   width: 100px;
+  height: 80px;
   height: min-content;
   text-decoration: none;
   color: #dddddd;
@@ -511,4 +512,5 @@
   font-size: 13px;
   margin-top: 0px;
   padding-top: 0px;
+  margin-bottom: 10px;
 }

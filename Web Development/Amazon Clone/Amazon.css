@@ -468,3 +468,7 @@
   color: white;
   text-decoration: none;
 }
+
+#Item_Name {
+  font-size: 22px;
+}

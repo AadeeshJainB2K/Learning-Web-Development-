@@ -485,12 +485,15 @@
 
 .FooterDeskItem {
   display: flex;
-  justify-content: start;
+  align-items: flex-start;
   flex-wrap: wrap;
-  align-items: start;
-  width: 115px;
-  height: 80px;
+  width: 100px;
+  height: min-content;
   text-decoration: none;
+  color: #dddddd;
+  text-decoration: none;
+  font-size: 13px;
+  overflow-y: hidden;
 }
 
 .FooterDeskItem:hover {
@@ -498,10 +501,6 @@
 }
 
 .FooterDeskAnchor {
-  color: #dddddd;
-  text-decoration: none;
-  margin-bottom: -20px;
-  font-size: 13px;
 }
 
 .FooterDeskSpan {

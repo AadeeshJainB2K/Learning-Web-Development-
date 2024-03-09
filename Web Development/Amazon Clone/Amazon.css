@@ -415,7 +415,9 @@
 
 #HrLine {
   border-top: 1px solid #3a4553;
-  height: 1px;
+  height: 0.1px;
+  border: border-box;
+  background-color: #3a4553;
 }
 
 #FooterLogo {
@@ -472,4 +474,41 @@
 
 #Item_Name {
   font-size: 22px;
+}
+
+#FooterDeskLine {
+  background-color: #131a22;
+  height: 30vw;
+  display: flex;
+  justify-content: center;
+}
+
+.FooterDeskItem {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  align-items: start;
+  width: 115px;
+  height: 80px;
+  text-decoration: none;
+}
+
+.FooterDeskItem:hover {
+  text-decoration: underline;
+}
+
+.FooterDeskAnchor {
+  color: #dddddd;
+  text-decoration: none;
+  margin-bottom: -20px;
+  font-size: 13px;
+}
+
+.FooterDeskSpan {
+  color: #999999;
+  text-decoration: none;
+  margin-bottom: -20px;
+  font-size: 13px;
+  margin-top: 0px;
+  padding-top: 0px;
 }

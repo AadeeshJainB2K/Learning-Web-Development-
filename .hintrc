@@ -17,6 +17,12 @@
           "width: fit-content"
         ]
       }
+    ],
+    "axe/forms": [
+      "default",
+      {
+        "select-name": "off"
+      }
     ]
   }
 }

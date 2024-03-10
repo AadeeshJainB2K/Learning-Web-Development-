@@ -495,6 +495,7 @@
   text-decoration: none;
   font-size: 13px;
   overflow-y: hidden;
+  margin: 25px;
 }
 
 .FooterDeskItem:hover {

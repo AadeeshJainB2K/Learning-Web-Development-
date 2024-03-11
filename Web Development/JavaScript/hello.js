@@ -1,2 +1,2 @@
 let x = 20;
-console.log("Aadeesh");
+console.log(x + 2);

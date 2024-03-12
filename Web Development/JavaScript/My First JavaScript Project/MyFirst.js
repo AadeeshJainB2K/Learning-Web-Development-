@@ -1,2 +1,7 @@
-console.log("My First JS Proagram");
-console.log("I Love JS ");
+const student = {
+  Name: "Aadeesh Jain",
+  Class: 9,
+  isPass: true,
+};
+
+console.log(student.Class);

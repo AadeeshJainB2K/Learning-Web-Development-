@@ -1,4 +1,4 @@
-const Chaccha = {
+let Chaccha = {
   Name: "Chaccha",
   Class: 7,
   isPass: false,

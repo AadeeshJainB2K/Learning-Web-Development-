@@ -1,12 +1,14 @@
-const product = {
-  productName: "BallPen",
-  productRating: 4,
-  numberOfRating: 7.002,
-  isDealOfTheDay: true,
-  productPrice: 285,
-  isOfeer: true,
-  offer: "5% off",
-  finalPrice: 270,
+const profile = {
+  username: "shardhakhapra",
+  isBlueTickAvailable: true,
+  isFollow: false,
+  numberOfPosts: 195,
+  numberOfFollowers: 569000,
+  numberOfFollowing: 4,
+  fullName: "Shradha Khapra",
+  threadHandle: "shradhahapra",
+  designation: "Entrepreneur ApnaCollege | Ex-Microsoft",
+  bio: "To Educate Someone Is the Highest Privilage",
 };
 
-console.log(product);
+console.log(profile);

@@ -1,7 +1,8 @@
-const student = {
-  Name: "Aadeesh Jain",
-  Class: 9,
-  isPass: true,
+const Chaccha = {
+  Name: "Chaccha",
+  Class: 7,
+  isPass: false,
+  favouriteSong: "Zamdullaaaah Zamdullaaah ! ",
 };
 
-console.log(student.Class);
+console.log(Chaccha);

@@ -1,3 +1,4 @@
-let a = 5;
-let b = 10;
-console.log(b > a && b <= 10);
+let age = 18;
+if (age === 18) {
+  console.log("Eligible for Voter ID");
+}

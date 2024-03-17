@@ -21,8 +21,6 @@ if (Operation == "+") {
   result = firstOperand * secondOperand;
 } else if (Operation == "/") {
   result = firstOperand / secondOperand;
-} else if (Operation == "") {
-  result = firstOperand / secondOperand;
 } else {
   alert(
     "Given Information Is Incomplete Or Incorrect Refresh Page To Re-Enter Data"

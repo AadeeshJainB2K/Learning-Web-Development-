@@ -5,3 +5,8 @@ let number = parseFloat(
 );
 
 let Result;
+
+for (Result = 1; Result <= number; Result++) {
+  Result = Result + number;
+}
+console.log(Result);

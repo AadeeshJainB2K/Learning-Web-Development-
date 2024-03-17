@@ -1,11 +1,34 @@
-alert("This is a Calculator");
-let result;
-const opreation = parseFloat(prompt("Enter The Operation"));
-const firstNumber = prompt("Enter The First Operand");
-const secondNumber = parseFloat(prompt("Enter The Second Operand"));
+// Defining Variables
 
-if (opreation == "+") {
-  result = firstNumber + secondNumber;
+let firstOperand;
+let secondOperand;
+let Operation;
+let result;
+
+// Taknig Input Form The User
+
+firstOperand = parseFloat(prompt("Enter First Operand"));
+Operation = prompt("Enter The Opreation You Want To Peform (+,-,*,/)");
+secondOperand = parseFloat(prompt("Enter Second Operand"));
+
+// Main Logic
+
+if (Operation == "+") {
+  result = firstOperand + secondOperand;
+} else if (Operation == "-") {
+  result = firstOperand - secondOperand;
+} else if (Operation == "*") {
+  result = firstOperand * secondOperand;
+} else if (Operation == "/") {
+  result = firstOperand / secondOperand;
+} else if (Operation == "") {
+  result = firstOperand / secondOperand;
+} else {
+  alert(
+    "Given Information Is Incomplete Or Incorrect Refresh Page To Re-Enter Data"
+  );
 }
 
-console.log(result);
+// Result
+
+console.log(firstOperand, Operation, secondOperand, "=", result);

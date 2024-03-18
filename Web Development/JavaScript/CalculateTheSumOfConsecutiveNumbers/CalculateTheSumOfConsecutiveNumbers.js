@@ -1,12 +1,10 @@
-let number = parseFloat(
+let sum = 0;
+let Number = parseFloat(
   prompt(
-    "Enter A Number To Calculate The Sum Of 1 to The Number You Have Entered"
+    "Enter Any Numbr=er To Check Its Consecutive Sum Form 1 In The Console"
   )
 );
-
-let Result;
-
-for (Result = 1; Result <= number; Result++) {
-  Result = Result + number;
+for (let i = 0; i <= Number; i = i + 1) {
+  sum = sum + i;
 }
-console.log(Result);
+console.log(sum);

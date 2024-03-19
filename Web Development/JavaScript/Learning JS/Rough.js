@@ -1,4 +1,12 @@
-let i = 0;
-for (i = 1; i <= 1; i++) {
-  console.log("*");
+let Chaccha = {
+  fullName: "Abdul",
+  education: "notAvailabeInPakistan",
+  age: 35,
+  crimes: "9/11_Attack",
+};
+
+let keys;
+
+for (keys in Chaccha) {
+  console.log("Key = ", keys, "  ", "Value = ", Chaccha[keys]);
 }

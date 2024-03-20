@@ -4,7 +4,6 @@ let firstOperand;
 let secondOperand;
 let Operation;
 let result;
-
 // Taknig Input Form The User
 
 firstOperand = parseFloat(prompt("Enter First Operand"));
@@ -28,5 +27,4 @@ if (Operation == "+") {
 }
 
 // Result
-
-console.log(firstOperand, Operation, secondOperand, "=", result);
+alert(`${firstOperand} ${Operation} ${secondOperand} = ${result}`);

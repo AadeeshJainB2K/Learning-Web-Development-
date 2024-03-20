@@ -1,12 +1,3 @@
-let Chaccha = {
-  fullName: "Abdul",
-  education: "notAvailabeInPakistan",
-  age: 35,
-  crimes: "9/11_Attack",
-};
+let fullName = "aadeesh jain";
 
-let keys;
-
-for (keys in Chaccha) {
-  console.log("Key = ", keys, "  ", "Value = ", Chaccha[keys]);
-}
+console.log(fullName.toLowerCase());

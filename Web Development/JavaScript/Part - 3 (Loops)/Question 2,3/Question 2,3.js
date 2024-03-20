@@ -1,6 +1,6 @@
 let rightNumber = 25;
 let usersNumber = parseFloat(prompt("Guess The Correct Number ?"));
-for (i = 1; usersNumber !== rightNumber; i = i) {
+while (usersNumber !== rightNumber) {
   if (usersNumber !== rightNumber) {
     alert("Try Again");
     usersNumber = parseFloat(prompt("Guess The Correct Number ?"));

@@ -1,3 +1,2 @@
-let fullName = "aadeesh jain";
-
-console.log(fullName.toLowerCase());
+let Name = "Aadeesj";
+console.log(Name.charAt(2));

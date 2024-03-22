@@ -1,3 +1,5 @@
-let heros = ["shaktiman", "antman", "spiderman", "ironman"];
-heros.pop;
-console.log(heros);
+const multiply = (a, b) => {
+  return a * b;
+};
+
+console.log(multiply(2, 8));

@@ -4,7 +4,7 @@ let Number = parseFloat(
     "Enter Any Numbr=er To Check Its Consecutive Sum Form 1 In The Console"
   )
 );
-for (let i = 0; i <= Number; i = i + 1) {
+for (let i = 0; i <= Number; i++) {
   sum = sum + i;
 }
 console.log(sum);

@@ -1,5 +1,5 @@
-const multiply = (a, b) => {
-  return a * b;
-};
+let cities = ["Delhi", "Banglore", "Pune", "Nagpur", "Gurgown"];
 
-console.log(multiply(2, 8));
+cities.forEach((a) => {
+  console.log(a.toUpperCase());
+});

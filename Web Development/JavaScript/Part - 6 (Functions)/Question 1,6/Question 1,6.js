@@ -1,4 +1,4 @@
-noOfVowels("AeIoU");
+noOfVowels("Aadeesh Jain");
 function noOfVowels(str) {
   let num = 0;
   for (i of str) {

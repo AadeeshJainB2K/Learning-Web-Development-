@@ -1,0 +1,10 @@
+let companies = ["Bloomerg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+let original = `The original array is ${companies}`;
+console.log(original);
+let solution1 = `${companies.shift()}`;
+let ans1 = companies;
+console.log(`Ans 1 = ${companies}`);
+let solution2 = `${companies.splice(1, 1, "Ola")}`;
+console.log(`Ans 2 = ${companies}`);
+let solution3 = `${companies.push("Amazon")}`;
+console.log(`Ans 3 = ${companies}`);

@@ -1,5 +1,4 @@
-// let usersNumber = parseFloat(prompt("Enter A "));
-let usersNumber = 5;
+let usersNumber = parseFloat(prompt("Enter A "));
 let counting = [];
 for (i = 1; i <= usersNumber; i++) {
   counting.push(i);

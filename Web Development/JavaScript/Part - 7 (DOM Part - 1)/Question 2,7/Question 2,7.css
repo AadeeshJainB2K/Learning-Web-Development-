@@ -4,8 +4,12 @@
   justify-content: center;
 }
 .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: aqua;
   height: 200px;
   width: 200px;
   margin: 50px;
+  font-size: 30px;
 }

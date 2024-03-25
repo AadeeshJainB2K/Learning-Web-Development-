@@ -1,0 +1,18 @@
+#Box {
+  height: 500px;
+  width: 500px;
+  background-color: aqua;
+  font-size: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#Child {
+  height: 500px;
+  width: 500px;
+  background-color: red;
+  font-size: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

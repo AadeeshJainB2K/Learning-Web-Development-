@@ -1,5 +1,4 @@
-let a = [];
-for (i = 0; i < 5; i++) {
-  a.push(i);
-}
-console.log(a);
+let box = document.querySelector("#Box");
+let child = document.createElement("div");
+child.setAttribute("id", "Child");
+box.appendChild(child);

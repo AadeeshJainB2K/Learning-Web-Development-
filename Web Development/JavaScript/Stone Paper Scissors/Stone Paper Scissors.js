@@ -42,8 +42,8 @@ usersChoice = availableChoices.forEach((choice) => {
     } else if (usersChoice === "stone" && machinesChoice === "paper") {
       message.innerText = "You Lost . Paper Beats Your Rock";
       btn.setAttribute("class", "YouLost sparkleChange");
-      machinesScorePara.innerText = machinesScore;
       machinesScore++;
+      machinesScorePara.innerText = machinesScore;
     } else if (usersChoice === "scissors" && machinesChoice === "paper") {
       message.innerText = "You Won . Your Scissors Beats Paper";
       btn.setAttribute("class", "YouWon sparkleChange");
@@ -52,8 +52,8 @@ usersChoice = availableChoices.forEach((choice) => {
     } else if (usersChoice === "scissors" && machinesChoice === "stone") {
       message.innerText = "You Lost . Stone Beats Your Scissors";
       btn.setAttribute("class", "YouLost sparkleChange");
-      machinesScorePara.innerText = machinesScore;
       machinesScore++;
+      machinesScorePara.innerText = machinesScore;
     } else if (usersChoice === "paper" && machinesChoice === "stone") {
       message.innerText = "You Won . Your Paper Beats Stone";
       btn.setAttribute("class", "YouWon sparkleChange");
@@ -62,8 +62,8 @@ usersChoice = availableChoices.forEach((choice) => {
     } else if (usersChoice === "paper" && machinesChoice === "scissors") {
       message.innerText = "You Lost . Scissors Beats Your Paper";
       btn.setAttribute("class", "YouLost sparkleChange");
-      machinesScorePara.innerText = machinesScore;
       machinesScore++;
+      machinesScorePara.innerText = machinesScore;
     }
     return choice.getAttribute("id");
   });

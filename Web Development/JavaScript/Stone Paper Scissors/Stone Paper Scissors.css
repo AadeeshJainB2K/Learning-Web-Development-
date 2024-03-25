@@ -10,8 +10,8 @@ body {
   height: 99.6vh;
   background: rgba(0, 127, 255, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   background-image: url(https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171_1280.jpg);
@@ -26,10 +26,10 @@ body {
   justify-content: center;
   font-size: 3rem;
   font-family: Georgia, "Times New Roman", Times, serif;
-  background: rgba(5, 5, 5, 0);
+  background: rgba(0, 0, 0, 0.35);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(9px);
+  backdrop-filter: blur(9px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
@@ -68,22 +68,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100vw;
+  height: 50vh;
 }
 
 .Options {
   border: 0.4rem solid transparent;
-  /* transition-property: all;
-  transition: steps(10000);
-  transition-duration: 2s;
-  transition-timing-function: ease-in-out; */
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .Options:hover {
   background: rgba(5, 5, 5, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
   border-radius: 10px;
   border: 0.4rem solid rgba(255, 255, 255, 0.18);
 }
@@ -102,6 +100,8 @@ body {
   font-size: 2.5rem;
   color: white;
   font-weight: 500;
+  width: 15rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 #PickBtnSection {
@@ -113,17 +113,70 @@ body {
 
 .btn {
   border: none;
-  width: 15em;
-  height: 5em;
+  width: 55rem;
+  height: 3rem;
   border-radius: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 12px;
   background: #1c1a1c;
-  cursor: pointer;
   transition: all 450ms ease-in-out;
   background: linear-gradient(0deg, #a47cf3, #683fea);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+    inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 0px 4px rgba(255, 255, 255, 0.2), 0px 0px 180px 0px #9917ff;
+  transform: translateY(-2px);
+}
+
+.YouWon {
+  border: none;
+  width: 55rem;
+  height: 3rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: #1c1a1c;
+  transition: all 450ms ease-in-out;
+  background: linear-gradient(0deg, #00daa0, #13e100);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+    inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 0px 4px rgba(255, 255, 255, 0.2), 0px 0px 180px 0px #9917ff;
+  transform: translateY(-2px);
+}
+
+.YouLost {
+  border: none;
+  width: 40rem;
+  height: 3rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: #1c1a1c;
+  transition: all 450ms ease-in-out;
+  background: linear-gradient(0deg, #ff0000, #a70505);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+    inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 0px 4px rgba(255, 255, 255, 0.2), 0px 0px 180px 0px #9917ff;
+  transform: translateY(-2px);
+}
+
+.Draw {
+  border: none;
+  width: 45rem;
+  height: 3rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: #1c1a1c;
+  transition: all 450ms ease-in-out;
+  background: linear-gradient(0deg, #0088ff, #00ddff);
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
     inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
     0px 0px 0px 4px rgba(255, 255, 255, 0.2), 0px 0px 180px 0px #9917ff;
@@ -137,7 +190,21 @@ body {
   transform: scale(1.2);
 }
 
+.sparkleChange {
+  fill: #aaaaaa;
+  transition: all 800ms ease;
+  fill: white;
+  transform: scale(1.2);
+}
+
 .text {
+  font-weight: 600;
+  color: #aaaaaa;
+  font-size: medium;
+  color: white;
+}
+
+.textChange {
   font-weight: 600;
   color: #aaaaaa;
   font-size: medium;

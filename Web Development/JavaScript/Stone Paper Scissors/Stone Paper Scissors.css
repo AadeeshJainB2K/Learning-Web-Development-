@@ -79,11 +79,11 @@ body {
 
 .Options:hover {
   background: rgba(5, 5, 5, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 32px 0 rgb(0, 247, 255);
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   border-radius: 10px;
-  border: 0.4rem solid rgba(255, 255, 255, 0.18);
+  border: 0.4rem solid rgb(0, 247, 255);
 }
 
 .ScoreBoard {
@@ -126,7 +126,7 @@ body {
   background: linear-gradient(0deg, #a47cf3, #683fea);
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
     inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
-    0px 0px 0px 4px rgba(255, 255, 255, 0.2), 0px 0px 180px 0px #9917ff;
+    0px 0px 0px 4px rgba(255, 255, 255, 0.2), 0px 0px 50px 0px #9917ff;
   transform: translateY(-2px);
 }
 
@@ -144,7 +144,7 @@ body {
   background: linear-gradient(0deg, #00daa0, #13e100);
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
     inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
-    0px 0px 0px 4px rgba(255, 255, 255, 0.2), 0px 0px 180px 0px #9917ff;
+    0px 0px 0px 4px rgba(255, 255, 255, 0.2), 0px 0px 50px 0px #13e100;
   transform: translateY(-2px);
 }
 
@@ -162,7 +162,7 @@ body {
   background: linear-gradient(0deg, #ff0000, #a70505);
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
     inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
-    0px 0px 0px 4px rgba(255, 255, 255, 0.2), 0px 0px 180px 0px #9917ff;
+    0px 0px 0px 4px rgba(255, 255, 255, 0.2), 0px 0px 50px 0px #ff0000;
   transform: translateY(-2px);
 }
 
@@ -180,7 +180,7 @@ body {
   background: linear-gradient(0deg, #0088ff, #00ddff);
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
     inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
-    0px 0px 0px 4px rgba(255, 255, 255, 0.2), 0px 0px 180px 0px #9917ff;
+    0px 0px 0px 4px rgba(255, 255, 255, 0.2), 0px 0px 50px 0px #00ddff;
   transform: translateY(-2px);
 }
 

@@ -248,14 +248,15 @@ body {
     backdrop-filter: blur(9px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: all 0.5s ease-in-out;
   }
 
   #stone {
     background-image: url(rock.png);
     background-size: cover;
     background-position: center;
-    height: 5rem;
-    width: 5rem;
+    height: 20vh;
+    width: 20vh;
     border-radius: 50%;
     margin: 3rem;
   }
@@ -264,8 +265,8 @@ body {
     background-image: url(paper.png);
     background-size: cover;
     background-position: center;
-    height: 5rem;
-    width: 5rem;
+    height: 20vh;
+    width: 20vh;
     border-radius: 50%;
     margin: 3rem;
   }
@@ -274,8 +275,8 @@ body {
     background-image: url(scissors.png);
     background-size: cover;
     background-position: center;
-    height: 5rem;
-    width: 5rem;
+    height: 20vh;
+    width: 20vh;
     border-radius: 50%;
     margin: 3rem;
   }

@@ -1,9 +1,8 @@
-let student = {
-  firstName: "Aadeesh ",
-  lastName: "Jain",
-  standard: 9,
-  result: "88%",
-  printResult: () => {
-    console.log(student.result);
-  },
-};
+class Tata {
+  constructor() {}
+  printSafety() {
+    console.log("5 Stars by Global NCAP");
+  }
+}
+
+let nexon = new Tata();

@@ -1,18 +1,7 @@
-#Box {
-  height: 500px;
-  width: 500px;
-  background-color: aqua;
-  font-size: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#Child {
-  height: 500px;
-  width: 500px;
-  background-color: red;
-  font-size: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#mainHeading {
+  color: transparent;
+  background-image: url(https://i.pinimg.com/736x/c8/b2/f4/c8b2f4b7b5ced9a4f67aab222814fb8a.jpg);
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
 }

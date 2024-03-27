@@ -35,35 +35,35 @@ usersChoice = availableChoices.forEach((choice) => {
     machinesChoice = machinesChoiceGenerator();
     if (usersChoice === machinesChoice) {
       message.innerText = "Its a Draw . You Both Chose The Same .";
-      btn.setAttribute("class", "Draw sparkleChange");
+      btn.setAttribute("class", "Draw");
     } else if (usersChoice === "stone" && machinesChoice === "scissors") {
       message.innerText = "You Won . Your Stone Beats Scissors";
-      btn.setAttribute("class", "YouWon sparkleChange");
+      btn.setAttribute("class", "YouWon");
       usersScore++;
       usersScorePara.innerText = usersScore;
     } else if (usersChoice === "stone" && machinesChoice === "paper") {
       message.innerText = "You Lost . Paper Beats Your Rock";
-      btn.setAttribute("class", "YouLost sparkleChange");
+      btn.setAttribute("class", "YouLost");
       machinesScore++;
       machinesScorePara.innerText = machinesScore;
     } else if (usersChoice === "scissors" && machinesChoice === "paper") {
       message.innerText = "You Won . Your Scissors Beats Paper";
-      btn.setAttribute("class", "YouWon sparkleChange");
+      btn.setAttribute("class", "YouWon");
       usersScore++;
       usersScorePara.innerText = usersScore;
     } else if (usersChoice === "scissors" && machinesChoice === "stone") {
       message.innerText = "You Lost . Stone Beats Your Scissors";
-      btn.setAttribute("class", "YouLost sparkleChange");
+      btn.setAttribute("class", "YouLost");
       machinesScore++;
       machinesScorePara.innerText = machinesScore;
     } else if (usersChoice === "paper" && machinesChoice === "stone") {
       message.innerText = "You Won . Your Paper Beats Stone";
-      btn.setAttribute("class", "YouWon sparkleChange");
+      btn.setAttribute("class", "YouWon");
       usersScore++;
       usersScorePara.innerText = usersScore;
     } else if (usersChoice === "paper" && machinesChoice === "scissors") {
       message.innerText = "You Lost . Scissors Beats Your Paper";
-      btn.setAttribute("class", "YouLost sparkleChange");
+      btn.setAttribute("class", "YouLost");
       machinesScore++;
       machinesScorePara.innerText = machinesScore;
     }

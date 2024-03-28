@@ -1,5 +1,3 @@
-alert("Press F11 to get the best gameplay experience");
-
 let usersScore = 0;
 
 let machinesScore = 0;

@@ -10,7 +10,7 @@ const getFacts = async () => {
   let data = await fact.json();
   btn.addEventListener("click", () => {
     let randomIndexGenerator = () => {
-      let index = Math.floor(Math.random() * 4);
+      let index = Math.floor(Math.random() * 5);
       return index;
     };
     factText.innerText = data[randomIndexGenerator()].text;

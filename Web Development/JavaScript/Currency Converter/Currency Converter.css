@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://img.freepik.com/premium-vector/global-currency-background_115579-405.jpg);
+  background-size: cover;
+}
+
+.form {
+  height: 50vh;
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vh;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 0.4em;
+  background-color: #171717;
+  border-radius: 25px;
+  transition: 0.4s ease-in-out;
+}
+
+.form:hover {
+  transform: scale(1.05);
+  border: 1px solid black;
+}
+
+#heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0vh 2.3vh 2.3vh 2.3vh;
+  color: white;
+  font-size: 3vh;
+}
+
+.field {
+  height: 3vh;
+  width: 24vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  border-radius: 25px;
+  padding: 1.5vh;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #171717;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.Flag {
+  height: 6vh;
+}
+
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #d3d3d3;
+}
+
+.select {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 10vh;
+  width: 100%;
+}
+
+#ExchangeIcon {
+  color: #d3d3d3;
+}
+
+.select1 {
+  height: 4vh;
+  width: 7vw;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: 0.4s ease-in-out;
+  background-color: #252525;
+  color: white;
+}
+
+.select1:hover {
+  background-color: black;
+  color: white;
+}
+
+#result {
+  height: 4vh;
+  width: 23.7vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.button3 {
+  height: 4vh;
+  width: 23.7vw;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: 0.4s ease-in-out;
+  background-color: #252525;
+  color: white;
+}
+
+.button3:hover {
+  background-color: black;
+  color: white;
+}

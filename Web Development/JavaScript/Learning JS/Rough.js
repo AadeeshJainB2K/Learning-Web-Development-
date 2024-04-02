@@ -10,6 +10,23 @@ const getFacts = async () => {
   let usableData = await fetchedData.json();
   factBox.innerText = usableData[randomIndexGenerator()].text;
 };
+
+// making it with promise chaining
+
+// let catFactsAPI = "https://cat-fact.herokuapp.com/facts";
+
+// function getFacts() {
+//   let rawData = fetch(catFactsAPI);
+//   return rawData
+//     .then((rawData) => {
+//       usableData = rawData.json();
+//       return usableData;
+//     })
+//     .then((usableData) => {
+//       factBox.innerText = usableData[randomIndexGenerator()].text;
+//     });
+// }
+
 button.addEventListener("click", () => {
   getFacts();
 });

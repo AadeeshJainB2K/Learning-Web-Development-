@@ -13,23 +13,38 @@
 
 <body>
     <form class="form">
+
         <p id="heading">
             Currency Converter
         </p>
+
         <div class="field">
             <input value="" autocomplete="off" placeholder="Enter Ammount" class="input-field" type="text">
         </div>
+
         <div class="select">
-            <img src="https://flagsapi.com/BE/flat/64.png" alt="Flag" class="Flag">
-            <select class="select1"></select>
-            <i class="fa-solid fa-right-left" id="ExchangeIcon"></i>
-            <img src="https://flagsapi.com/BE/flat/64.png" alt="Flag" class="Flag">
-            <select class="select1"></select>
+            <div class="select1">
+                <img src="https://flagsapi.com/IN/flat/64.png" alt="Flag" class="Flag">
+                <p class="CountryCode">IND</p>
+                <select class="countries"></select>
+            </div>
+
+            <i class="fa-solid fa-right-long" id="ExchangeIcon"></i>
+
+            <div class="select1">
+                <img src="https://flagsapi.com/BE/flat/64.png" alt="Flag" class="Flag">
+                <p class="CountryCode">USD</p>
+                <select class="countries"></select>
+            </div>
+
         </div>
+
         <div id="result">
             <p>1=1</p>
         </div>
+
         <button class="button3">Convert</button>
+
     </form>
     <script src="codes.js"></script>
     <script src="Currency Converter.js"></script>

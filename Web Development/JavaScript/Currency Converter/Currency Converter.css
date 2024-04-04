@@ -9,7 +9,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(https://t3.ftcdn.net/jpg/04/34/58/54/360_F_434585463_zpdtTpTEbqQFfsp6RVEW6IIxEM9dHf86.jpg);
+  background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20220512/pngtree-growing-chart-against-the-background-of-the-usa-america-flag-candlestick-image_1298783.jpg);
   background-size: cover;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   -webkit-backdrop-filter: blur(4px);
@@ -76,6 +76,7 @@ body {
   border-bottom-right-radius: 5px;
   background-color: #252525;
   border-color: #252525;
+  cursor: pointer;
 }
 
 .input-field {
@@ -92,6 +93,7 @@ body {
   justify-content: space-around;
   height: 10vh;
   width: 100%;
+  cursor: pointer;
 }
 
 #ExchangeIcon {
@@ -145,6 +147,7 @@ body {
   transition: 0.4s ease-in-out;
   background-color: #252525;
   color: white;
+  cursor: pointer;
 }
 
 .button3:hover {

@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #163677, #4e0857);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#ToDoApp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 50vh;
+  width: 30vw;
+  border-radius: 1vh;
+}
+
+#MainHeading {
+  align-self: flex-start;
+  width: 11vw;
+  margin-top: 5vh;
+  margin-left: 3vw;
+}
+
+#icon {
+  align-self: flex-start;
+  height: 4vh;
+  margin-top: 4.5vh;
+  margin-left: 1vw;
+}
+
+#usersTask {
+  background-color: #eaedef;
+  height: 6vh;
+  width: 20vw;
+  border: none;
+  border-radius: 10vh;
+  padding-left: 2vw;
+  position: absolute;
+  top: 38vh;
+  left: 38vw;
+}

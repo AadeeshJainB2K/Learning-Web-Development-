@@ -26,9 +26,11 @@ body {
 
 #MainHeading {
   align-self: flex-start;
-  width: 11vw;
   margin-top: 5vh;
   margin-left: 3vw;
+  font-size: 3vh;
+  width: 11vw;
+  word-wrap: normal;
 }
 
 #icon {
@@ -41,11 +43,43 @@ body {
 #usersTask {
   background-color: #eaedef;
   height: 6vh;
-  width: 20vw;
+  width: 22vw;
   border: none;
   border-radius: 10vh;
   padding-left: 2vw;
   position: absolute;
   top: 38vh;
   left: 38vw;
+  border: none;
+  outline: none;
+}
+
+#btn {
+  background-color: #ff653b;
+  height: 6vh;
+  width: 7vw;
+  border: none;
+  border-radius: 10vh;
+  position: absolute;
+  top: 38vh;
+  left: 55vw;
+  font: inherit;
+  color: white;
+  cursor: pointer;
+}
+
+#list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45vh;
+  width: 22vw;
+  user-select: none;
+}
+
+#listContainer li {
+  list-style: none;
+  font-size: 2.5vh;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
 }

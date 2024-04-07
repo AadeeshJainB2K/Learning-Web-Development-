@@ -1,32 +1,15 @@
-let factBox = document.querySelector("#Fact");
-let button = document.querySelector("#btn");
-let randomIndexGenerator = () => {
-  let index = Math.floor(Math.random() * 5);
-  return index;
-};
-const getFacts = async () => {
-  let catFactsAPI = "https://cat-fact.herokuapp.com/facts";
-  let fetchedData = await fetch(catFactsAPI);
-  let usableData = await fetchedData.json();
-  factBox.innerText = usableData[randomIndexGenerator()].text;
-};
+document.body.addEventListener("mousemove", (evt) => {
+  const mouseX = evt.clientX;
+  const mouseY = evt.clientY;
 
-// making it with promise chaining
+  gsap.set(".cursor", {
+    x: mouseX,
+    y: mouseY,
+  });
 
-// let catFactsAPI = "https://cat-fact.herokuapp.com/facts";
-
-// function getFacts() {
-//   let rawData = fetch(catFactsAPI);
-//   return rawData
-//     .then((rawData) => {
-//       usableData = rawData.json();
-//       return usableData;
-//     })
-//     .then((usableData) => {
-//       factBox.innerText = usableData[randomIndexGenerator()].text;
-//     });
-// }
-
-button.addEventListener("click", () => {
-  getFacts();
+  gsap.to(".shape", {
+    x: mouseX,
+    y: mouseY,
+    stagger: -0.1,
+  });
 });

@@ -29,7 +29,12 @@ body {
   border-radius: 50%;
   background-color: #eb4b98;
   background-size: cover;
-  transition: all 1s steps(1000) ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+#circle_1:hover {
+  height: 35vh;
+  width: 35vh;
 }
 
 #circle_2 {
@@ -42,6 +47,12 @@ body {
   border-radius: 50%;
   background-size: cover;
   z-index: 0;
+  transition: all 2s ease-in-out;
+}
+
+#circle_2:hover {
+  height: 25vh;
+  width: 25vh;
 }
 
 #app {
@@ -140,9 +151,10 @@ body {
 }
 
 #taskText {
+  width: 20vw;
   list-style: none;
   color: rgb(237, 255, 34);
-  font-size: 3.5vh;
+  font-size: 3vh;
   position: absolute;
   left: 5vw;
   top: 25vh;
@@ -150,7 +162,11 @@ body {
 
 .unchecked {
   height: 2vh;
+  width: 2vh;
   margin-top: 1vh;
+  background-image: url(unchecked.png);
+  background-size: cover;
+  background-size: 2vh;
 }
 
 .checked {
@@ -161,4 +177,53 @@ body {
 .checked_li {
   color: rgba(237, 255, 34, 0.444);
   text-decoration: line-through;
+}
+
+.liContainer {
+  width: 20vw;
+}
+
+li {
+  display: inline-flex;
+  width: 20vw;
+}
+
+.uncheckedImg {
+  height: 2vh;
+  width: 2vh;
+  margin-right: 1vh;
+  margin-top: 0.4vh;
+  display: inline;
+}
+
+.listContainer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  word-wrap: normal;
+}
+
+.cross {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4vh;
+  width: 4vh;
+  position: relative;
+  justify-self: flex-end;
+  padding-top: 0.2vh;
+}
+
+.cross:hover {
+  background-color: #6767674d;
+  border-radius: 50%;
+}
+
+.listContainerFirst {
+  width: 25vw;
+  height: 5vh;
+  display: inline-flex;
+  align-items: center;
+  word-wrap: anywhere;
+  margin: 1vh 0 1vh 0;
 }

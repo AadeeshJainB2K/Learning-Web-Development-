@@ -175,6 +175,11 @@ body {
 }
 
 .checked_li {
+  height: 2vh;
+  margin-top: 1vh;
+}
+
+.checked_li {
   color: rgba(237, 255, 34, 0.444);
   text-decoration: line-through;
 }
@@ -201,6 +206,7 @@ li {
   align-items: center;
   justify-content: space-between;
   word-wrap: normal;
+  cursor: pointer;
 }
 
 .cross {
@@ -226,4 +232,5 @@ li {
   align-items: center;
   word-wrap: anywhere;
   margin: 1vh 0 1vh 0;
+  cursor: pointer;
 }

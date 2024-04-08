@@ -20,6 +20,7 @@ function addTask() {
   let crossSymbol = document.createElement("span");
   listContainerFirst.classList.add("listContainerFirst");
   mainLi.append(listContainerFirst);
+  mainLi.classList.add("mainLi");
   task.innerText = input.value;
   uncheckedImg.classList.add("uncheckedImg");
   uncheckedImg.src = "unchecked.png";
@@ -32,6 +33,13 @@ function addTask() {
   crossSymbol.classList.add("cross");
   listContainer.appendChild(crossSymbol);
   input.value = "";
+  listContainer.addEventListener("click", (i) => {
+    if (i.target.tagName === "SPAN") {
+      mainLi.remove();
+    } else if (i.target.tagName === "LI") {
+      console.log("abcd");
+    }
+  });
 }
 
 btn.addEventListener("click", () => {

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 
 export default function Header(props) {
@@ -27,7 +28,7 @@ export default function Header(props) {
               <a className="nav-link">About</a>
             </li>
           </ul>
-          <form class="d-flex">
+          <form className="d-flex">
             <input
               className="form-control me-2"
               type="search"

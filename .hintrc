@@ -16,7 +16,10 @@
         "ignore": [
           "width: fit-content",
           "height: fit-content",
-          "user-select"
+          "user-select",
+          "-webkit-text-size-adjust",
+          "text-align: -webkit-match-parent",
+          "-webkit-overflow-scrolling"
         ]
       }
     ],
@@ -41,12 +44,15 @@
           "meta[name=theme-color]"
         ]
       }
-    ]
+    ],
+    "css-prefix-order": "off"
   },
   "browserslist": [
     "defaults",
     "not ie 11",
     "not and_ff <= 123",
-    "not firefox <= 123"
+    "not firefox <= 123",
+    "not ios_saf <= 17.4",
+    "not safari <= 17.4"
   ]
 }

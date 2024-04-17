@@ -1,17 +1,22 @@
-let [hours, minutes, seconds, miliseconds] = ["00 ", ": 00 ", ": 00 ", ": 000"];
+let [hours, minutes, second, miliseconds] = [0, 0, 0, 0];
 
 let timerDisplay = document.querySelector("#timerDisplay");
 
-let startbtn = document.querySelector("#startTimer");
+let startBtn = document.querySelector("#startTimer");
 
-timerDisplay.innerText = [hours, minutes, seconds, miliseconds];
+let resetBtn = document.querySelector("#resetTimer");
 
-function startTime() {
-  miliseconds++;
-  if (miliseconds == 999) {
-    seconds++;
-  }
-  timerDisplay.innerText = "working";
+timerDisplay.innerText = `${hours} : ${minutes} : ${second} : ${miliseconds}`;
+
+function stopWatch() {
+  setInterval(() => {
+    miliseconds++;
+    if (miliseconds == 999) {
+      seconds++;
+      miliseconds = 0;
+    }
+    timerDisplay.innerText = `${hours} : ${minutes} : ${second} : ${miliseconds}`;
+  }, 1);
 }
 
-startbtn.addEventListener("click", startTime());
+resetBtn.click(stopWatch());

@@ -1,0 +1,44 @@
+* {
+  border: border-box;
+  margin: 0px;
+  padding: 0px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(https://wallpapers.com/images/hd/rolex-1600-x-1024-background-qt9j69tpjsypp7cw.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#app {
+  height: 50vh;
+  width: 50vw;
+  background: rgba(107, 107, 107, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#timerDisplay {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#buttons {
+  height: 100%;
+  width: 50vw;
+}

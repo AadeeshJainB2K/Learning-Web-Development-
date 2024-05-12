@@ -36,9 +36,16 @@ function functionality() {
   }, 1);
 }
 
-startBtn.addEventListener("click", functionality());
+startBtn.addEventListener("click", functionality);
 
-resetBtn.addEventListener(
-  "click",
-  (timerDisplay.innerText = `00 : 00 : 00: 00`)
-);
+stopBtn.addEventListener("click", () => {
+  clearInterval(functionality);
+});
+
+resetBtn.addEventListener("click", () => {
+  clearInterval(functionality);
+  [hours, minutes, seconds, miliseconds] = [0o0, 0o0, 0o0, 0o0];
+  timerDisplay.innerText = `${padTime(hours)} : ${padTime(minutes)} : ${padTime(
+    seconds
+  )} : ${padTime(miliseconds)}`;
+});

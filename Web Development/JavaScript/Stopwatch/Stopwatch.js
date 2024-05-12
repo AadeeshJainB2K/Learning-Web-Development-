@@ -1,4 +1,4 @@
-let [hours, minutes, second, miliseconds] = [0, 0, 0, 0];
+let [hours, minutes, seconds, miliseconds] = [0, 0, 0, 0];
 
 let timerDisplay = document.querySelector("#timerDisplay");
 
@@ -6,17 +6,16 @@ let startBtn = document.querySelector("#startTimer");
 
 let resetBtn = document.querySelector("#resetTimer");
 
-timerDisplay.innerText = `${hours} : ${minutes} : ${second} : ${miliseconds}`;
+timerDisplay.innerText = `${hours} : ${minutes} : ${seconds} : ${miliseconds}`;
 
-function stopWatch() {
+function functionality() {
   setInterval(() => {
     miliseconds++;
-    if (miliseconds == 999) {
+    timerDisplay.innerText = `${hours} : ${minutes} : ${seconds} : ${miliseconds}`;
+    if (miliseconds >= 99) {
       seconds++;
       miliseconds = 0;
     }
-    timerDisplay.innerText = `${hours} : ${minutes} : ${second} : ${miliseconds}`;
   }, 1);
 }
-
-resetBtn.click(stopWatch());
+resetBtn.click(functionality());

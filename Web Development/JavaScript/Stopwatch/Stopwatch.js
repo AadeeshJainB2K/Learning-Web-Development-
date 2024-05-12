@@ -6,22 +6,25 @@ let startBtn = document.querySelector("#startTimer");
 
 let resetBtn = document.querySelector("#resetTimer");
 
+let stopBtn = document.querySelector("#stopTimer");
+
+let interval = null;
+
 timerDisplay.innerText = `${padTime(hours)} : ${padTime(minutes)} : ${padTime(
   seconds
-)} : ${padTime(miliseconds)}`;
+)} : ${miliseconds / 100}0`;
 
 function padTime(time) {
   return time < 10 ? `0${time}` : time;
 }
 
 function functionality() {
-  setInterval(() => {
-    miliseconds++;
-    timerDisplay.innerText = `${padTime(hours)} : ${padTime(
-      minutes
-    )} : ${padTime(seconds)} : ${padTime(miliseconds)}`;
+  if (interval) return;
 
-    if (miliseconds >= 99) {
+  interval = setInterval(() => {
+    miliseconds += 100;
+
+    if (miliseconds > 999) {
       seconds++;
       miliseconds = 0;
     }
@@ -33,18 +36,26 @@ function functionality() {
       hours++;
       minutes = 0;
     }
-  }, 1);
+    timerDisplay.innerText = `${padTime(hours)} : ${padTime(
+      minutes
+    )} : ${padTime(seconds)} : ${miliseconds / 100}0`;
+  }, 100);
 }
 
 startBtn.addEventListener("click", functionality);
 
 stopBtn.addEventListener("click", () => {
-  clearInterval(functionality);
+  if (interval) clearInterval(interval);
+
+  // Reset the value of interval variable so that we can check the value in functionality function to handle multiple start clicks
+  interval = null;
 });
 
 resetBtn.addEventListener("click", () => {
-  clearInterval(functionality);
-  [hours, minutes, seconds, miliseconds] = [0o0, 0o0, 0o0, 0o0];
+  if (interval) clearInterval(interval);
+  interval = null;
+
+  [hours, minutes, seconds, miliseconds] = [0, 0, 0, 0];
   timerDisplay.innerText = `${padTime(hours)} : ${padTime(minutes)} : ${padTime(
     seconds
   )} : ${padTime(miliseconds)}`;

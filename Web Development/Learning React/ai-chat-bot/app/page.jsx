@@ -1,16 +1,14 @@
 "use client";
 
 import React from "react";
-import Header from "./Components/Header";
-import Main from "./Components/Main";
-import Footer from "./Components/Footer";
+import MainApp from "./Components/MainApp";
+import Background from "./Components/Background";
 
 const page = () => {
   return (
     <>
-      <Header></Header>
-      <Main></Main>
-      <Footer></Footer>
+      <Background />
+      <MainApp />
     </>
   );
 };

@@ -19,7 +19,7 @@ const MainApp = () => {
   const getResponse = async () => {
     setanswer("Loading....");
     const response = await axios({
-      url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyDkRAdJYJ_dEDpHj0ccHEU6_X1iuJnyZPg",
+      url: "",
       method: "post",
       data: { contents: [{ parts: [{ text: prompt }] }] },
     });

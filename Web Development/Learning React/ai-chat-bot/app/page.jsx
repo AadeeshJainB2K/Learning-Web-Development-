@@ -2,12 +2,12 @@
 
 import React from "react";
 import MainApp from "./Components/MainApp";
-import Background from "./Components/Background";
+import Header from "./Components/Header";
 
 const page = () => {
   return (
     <>
-      <Background />
+      <Header />
       <MainApp />
     </>
   );

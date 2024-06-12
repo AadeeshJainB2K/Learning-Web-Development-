@@ -1,23 +1,26 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  border: border-box;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  font-family: "Inconsolata", monospace;
 }
 
 body {
-  height: 100vh;
-  width: 100vw;
-  border-radius: 50px;
-  background: linear-gradient(
-    135deg,
-    rgb(24, 120, 255),
-    rgb(78, 78, 219),
-    rgb(0, 255, 213)
-  );
-  box-shadow: 20px 20px 60px #531abe, -20px -20px 60px #7124ff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 99.67vh;
+  background: rgba(0, 127, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background-image: url(https://www.shutterstock.com/image-vector/abstract-black-polygon-red-light-600nw-1114396982.jpg);
+  background-size: cover;
+  overflow-y: hidden;
 }
 
 .inconsolata {
@@ -28,136 +31,127 @@ body {
   font-variation-settings: "wdth" 100;
 }
 
-#circle_1 {
-  position: absolute;
-  right: 26vw;
-  top: 12vh;
-  height: 30vh;
-  width: 30vh;
-  border-radius: 50%;
-  background-color: #eb4b98;
-  background-size: cover;
-  transition: all 2s ease-in-out;
-}
-
-#circle_1:hover {
-  height: 35vh;
-  width: 35vh;
-}
-
-#circle_2 {
-  position: absolute;
-  left: 30vw;
-  top: 68vh;
-  height: 20vh;
-  width: 20vh;
-  background-color: rgb(0, 255, 183);
-  border-radius: 50%;
-  background-size: cover;
-  z-index: 0;
-  transition: all 2s ease-in-out;
-}
-
-#circle_2:hover {
-  height: 25vh;
-  width: 25vh;
-}
-
-#app {
-  height: 70vh;
-  width: 35vw;
-  background: rgba(0, 0, 0, 0.109);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  -webkit-backdrop-filter: blur(0.5vh);
-  backdrop-filter: blur(00.5vh);
-  border-radius: 7vh;
-  border: 1px solid rgba(0, 0, 0, 0.18);
-  border-radius: 7vh;
-  transition: all ease-in-out 1s;
-}
-
-#header {
-  height: 25%;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  -webkit-backdrop-filter: blur(1px);
-  backdrop-filter: blur(2px);
-  border-radius: 7vh;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+#heading {
   color: white;
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 4.5vh;
-  z-index: 3;
+  font-size: 6vh;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background: rgba(0, 0, 0, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(135, 31, 31, 0.788);
+  -webkit-backdrop-filter: blur(9px);
+  backdrop-filter: blur(9px);
+  border-radius: 10px;
+  border: 0.1vh solid rgba(255, 255, 255, 0.18);
+  margin-bottom: 6vh;
 }
 
-#icon {
-  height: 7vh;
-  margin-left: 2vw;
+#resultArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 60vh;
+  color: white;
+  overflow-y: hidden;
+  padding-bottom: 3vh;
+  border-radius: 10px;
 }
 
-#main {
-  height: 75%;
+.result {
+  height: 100%;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 0vw 7vw 0vw 7vw 0vw;
+  font-size: 8vh;
+  color: white;
+  font-weight: 500;
+  width: 30vh;
+  font-family: "Inconsolata";
+  overflow-y: scroll;
 }
 
 #inputField {
+  height: 20vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  align-self: flex-start;
-  margin-top: 3vw;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
-#input {
+#promptInput {
   display: inline;
   outline: none;
-  border-top-left-radius: 12vh;
-  border-top-right-radius: -12vh;
-  border-bottom-left-radius: 12vh;
-  border-bottom-right-radius: -12vh;
+  border-radius: 12vh;
   height: 5vh;
-  width: 30vw;
+  width: 50vw;
   padding-left: 1vw;
-  padding-right: 7.5vw;
-  background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  padding-right: 8vw;
+  background: rgba(0, 0, 0, 0.363);
+  box-shadow: 0 8px 32px 0 rgba(135, 31, 31, 0.637);
   -webkit-backdrop-filter: blur(1px);
   backdrop-filter: blur(2px);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  color: white;
-  position: absolute;
+  color: rgb(167, 167, 167);
   left: 2.2vw;
   font-size: 2vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
-#input::placeholder {
-  color: white;
-  font-size: 1.7vh;
-}
-
-#button {
-  display: inline;
-  text-align: center;
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   outline: none;
   border-radius: 12vh;
   height: 5vh;
   width: 7vw;
-  background: rgb(0, 255, 162);
-  background-size: 100vw;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background-color: #e52227;
+  box-shadow: 0 8px 32px 0 rgba(135, 31, 31, 0.637);
   -webkit-backdrop-filter: blur(1px);
   backdrop-filter: blur(2px);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  color: black;
+  color: white;
   z-index: 2;
-  position: absolute;
-  right: 2vw;
-  font-size: 1.7vh;
+  right: 20vw;
+  font-size: 3vh;
   cursor: pointer;
+  position: absolute;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+#result {
+  border: none;
+  width: 60vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: #aaaaaa;
+  font-size: 1.5vh;
+  color: white;
+  font: inherit;
+  font-size: 3vh;
+}
+
+#resultArea::-webkit-scrollbar {
+  background: rgba(0, 0, 0, 0.363);
+  box-shadow: 0 8px 32px 0 rgba(135, 31, 31, 0.637);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+}
+
+#resultArea::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.363);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
 }

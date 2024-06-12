@@ -18,7 +18,7 @@ body {
   backdrop-filter: blur(4px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  background-image: url(https://www.shutterstock.com/image-vector/abstract-black-polygon-red-light-600nw-1114396982.jpg);
+  background-image: url(./Components/windows-11-dark-mode-abstract-background-black-background-3840x2160-8710.jpg);
   background-size: cover;
   overflow-y: hidden;
 }
@@ -40,7 +40,7 @@ body {
   font-size: 6vh;
   font-family: Georgia, "Times New Roman", Times, serif;
   background: rgba(0, 0, 0, 0.35);
-  box-shadow: 0 8px 32px 0 rgba(135, 31, 31, 0.788);
+  box-shadow: 0 8px 32px 0 rgba(107, 107, 107, 0.637);
   -webkit-backdrop-filter: blur(9px);
   backdrop-filter: blur(9px);
   border-radius: 10px;
@@ -56,16 +56,10 @@ body {
   height: 60vh;
   color: white;
   overflow-y: hidden;
-  padding-bottom: 3vh;
-  border-radius: 10px;
 }
 
 .result {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
+  padding-top: 4vh;
   margin: 0vw 7vw 0vw 7vw 0vw;
   font-size: 8vh;
   color: white;
@@ -93,7 +87,7 @@ body {
   padding-left: 1vw;
   padding-right: 8vw;
   background: rgba(0, 0, 0, 0.363);
-  box-shadow: 0 8px 32px 0 rgba(135, 31, 31, 0.637);
+  box-shadow: 0 8px 32px 0 rgba(107, 107, 107, 0.637);
   -webkit-backdrop-filter: blur(1px);
   backdrop-filter: blur(2px);
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -113,13 +107,13 @@ button {
   height: 5vh;
   width: 7vw;
   background-color: #e52227;
-  box-shadow: 0 8px 32px 0 rgba(135, 31, 31, 0.637);
+  box-shadow: 0 8px 32px 0 rgba(107, 107, 107, 0.637);
   -webkit-backdrop-filter: blur(1px);
   backdrop-filter: blur(2px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   color: white;
   z-index: 2;
-  right: 20vw;
+  right: 20.25vw;
   font-size: 3vh;
   cursor: pointer;
   position: absolute;
@@ -144,7 +138,7 @@ button {
 
 #result::-webkit-scrollbar {
   background: rgba(0, 0, 0, 0.363);
-  box-shadow: 0 8px 32px 0 rgba(135, 31, 31, 0.637);
+  box-shadow: 0 8px 32px 0 rgba(107, 107, 107, 0.637);
   -webkit-backdrop-filter: blur(1px);
   backdrop-filter: blur(2px);
   border: 1px solid rgba(255, 255, 255, 0.18);

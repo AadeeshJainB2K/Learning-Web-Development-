@@ -61,6 +61,9 @@ body {
 }
 
 .result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100%;
   width: 100%;
   margin: 0vw 7vw 0vw 7vw 0vw;
@@ -139,16 +142,18 @@ button {
   font-size: 3vh;
 }
 
-#resultArea::-webkit-scrollbar {
+#result::-webkit-scrollbar {
   background: rgba(0, 0, 0, 0.363);
   box-shadow: 0 8px 32px 0 rgba(135, 31, 31, 0.637);
   -webkit-backdrop-filter: blur(1px);
   backdrop-filter: blur(2px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 10px;
+  width: 0.7vw;
 }
 
-#resultArea::-webkit-scrollbar-thumb {
+#result::-webkit-scrollbar-thumb {
+  width: 0.7vw;
   background: rgba(0, 0, 0, 0.363);
   -webkit-backdrop-filter: blur(1px);
   backdrop-filter: blur(2px);

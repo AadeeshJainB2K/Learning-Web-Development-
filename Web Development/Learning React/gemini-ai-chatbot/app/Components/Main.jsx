@@ -26,9 +26,10 @@ const MainApp = (props) => {
       data: { contents: [{ parts: [{ text: prompt }] }] },
     });
 
-    const answer =
-      response["data"]["candidates"][0]["content"]["parts"][0]["text"];
-    setanswer(answer);
+    const answer = await response["data"]["candidates"][0]["content"][
+      "parts"
+    ][0]["text"];
+    await setanswer(answer);
     console.log(answer);
   };
 

@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-const MainApp = () => {
+const MainApp = (props) => {
   const [prompt, setprompt] = useState("");
   const [answer, setanswer] = useState("");
+
+  const GEMINI_API_KEY = props.GEMINI_API_KEY;
 
   useEffect(() => {
     const btn = document.querySelector("#btn");
@@ -16,18 +18,20 @@ const MainApp = () => {
     });
   });
 
-  const getResponse = async (props) => {
+  const getResponse = async () => {
     setanswer("Loading....");
     const response = await axios({
-      url: "",
+      url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${GEMINI_API_KEY}`,
       method: "post",
       data: { contents: [{ parts: [{ text: prompt }] }] },
     });
+
     const answer =
       response["data"]["candidates"][0]["content"]["parts"][0]["text"];
     setanswer(answer);
     console.log(answer);
   };
+
   return (
     <>
       <main>
@@ -43,7 +47,7 @@ const MainApp = () => {
             }}
           />
           <button id="btn" onClick={getResponse}>
-            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            <i className="fa-solid fa-arrow-up-from-bracket"></i>
           </button>
         </section>
         <section id="resultArea">

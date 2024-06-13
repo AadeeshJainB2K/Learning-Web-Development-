@@ -3,15 +3,15 @@
 @tailwind utilities; */
 
 * {
-  border: border-box;
-  margin: 0px;
-  padding: 0px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
   font-family: "Inconsolata", monospace;
 }
 
 body {
-  height: 99.67vh;
+  min-height: 100vh;
   background: rgba(0, 127, 255, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   -webkit-backdrop-filter: blur(4px);
@@ -37,7 +37,7 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 6vh;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Inconsolata", monospace;
   background: rgba(0, 0, 0, 0.35);
   box-shadow: 0 8px 32px 0 rgba(107, 107, 107, 0.637);
   -webkit-backdrop-filter: blur(9px);
@@ -52,20 +52,22 @@ body {
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 60vh;
+  height: calc(
+    100vh - 20vh - 10vh - 6vh
+  ); /* Calculate height based on other elements */
   color: white;
-  overflow-y: hidden;
 }
 
 .result {
   padding-top: 4vh;
-  margin: 0vw 7vw 0vw 7vw 0vw;
-  font-size: 8vh;
+  margin: 0 7vw;
+  font-size: 4vh; /* Adjust font size for smaller screens */
   color: white;
   font-weight: 500;
-  width: 30vh;
-  font-family: "Inconsolata";
-  overflow-y: scroll;
+  font-family: "Inconsolata", monospace;
+  overflow-y: auto;
+  max-height: 100%;
+  width: 100%;
 }
 
 #inputField {
@@ -73,8 +75,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow-y: hidden;
-  overflow-x: hidden;
 }
 
 #promptInput {
@@ -84,17 +84,14 @@ body {
   height: 5vh;
   width: 50vw;
   padding-left: 1vw;
-  padding-right: 8vw;
+  padding-right: 3vw;
   background: rgba(0, 0, 0, 0.363);
   box-shadow: 0 8px 32px 0 rgba(107, 107, 107, 0.637);
   -webkit-backdrop-filter: blur(1px);
   backdrop-filter: blur(2px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   color: rgb(167, 167, 167);
-  left: 2.2vw;
   font-size: 2vh;
-  overflow-y: hidden;
-  overflow-x: hidden;
 }
 
 button {
@@ -112,27 +109,23 @@ button {
   border: 1px solid rgba(255, 255, 255, 0.18);
   color: white;
   z-index: 2;
-  right: 20.25vw;
+  right: 20%;
   font-size: 3vh;
   cursor: pointer;
   position: absolute;
-  overflow-y: hidden;
-  overflow-x: hidden;
 }
 
 #result {
   border: none;
-  width: 60vw;
-  height: 60vh;
+  width: 70%;
+  height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   font-weight: 600;
-  color: #aaaaaa;
-  font-size: 1.5vh;
   color: white;
-  font: inherit;
-  font-size: 3vh;
+  font-size: 2.5vh; /* Adjust font size for better readability */
+  overflow-y: auto;
 }
 
 #result::-webkit-scrollbar {

@@ -1,11 +1,15 @@
 "use-client";
-import MainApp from "@/Components/MainApp";
 import React from "react";
+import Tasks from "@/Components/Tasks";
+import Header from "@/Components/Header";
+import Form from "@/Components/Form";
 
 const page = () => {
   return (
     <>
-      <MainApp />
+      <Header />
+      <Form />
+      <Tasks />
     </>
   );
 };

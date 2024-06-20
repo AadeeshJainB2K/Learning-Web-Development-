@@ -6,14 +6,6 @@ const Form = () => {
   const [Description, setDescription] = useState("");
   const [mainTask, setmainTask] = useState([]);
 
-  const submitHandler = (e) => {
-    e.preventDefault();
-    setmainTask([...mainTask, { Task, Description }]);
-    setTask("");
-    setDescription("");
-    console.log(mainTask);
-  };
-
   useEffect(() => {
     const btn = document.querySelector("#btn");
     const input = document.querySelector("#Description");
@@ -25,7 +17,28 @@ const Form = () => {
     });
   });
 
-  const renderTask = <h2></h2>;
+  const submitHandler = (e) => {
+    e.preventDefault();
+    setmainTask([...mainTask, { task, description }]);
+    setTask("");
+    setDescription("");
+    console.log(mainTask);
+  };
+
+  let renderTask = <h2>Task Not Available</h2>;
+
+  renderTask = () => {
+    mainTask.map((t, i) => {
+      return (
+        <>
+          <div className="flex">
+            <h5>{t.task}</h5>
+            <h6>{t.description}</h6>
+          </div>
+        </>
+      );
+    });
+  };
 
   return (
     <>
@@ -61,8 +74,9 @@ const Form = () => {
           Add Task
         </button>
       </form>
-      <section className=" bg-slate-600 h-full"></section>
-      <div className="h-16 bg-slate-600 text-white">{renderTask}</div>
+      <section className=" bg-slate-600 h-full">
+        <div className=" bg-slate-600 text-white">{renderTask}</div>
+      </section>
     </>
   );
 };

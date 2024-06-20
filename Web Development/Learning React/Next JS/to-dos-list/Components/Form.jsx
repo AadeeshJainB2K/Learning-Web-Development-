@@ -1,5 +1,6 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+
 const Form = () => {
   const [Task, setTask] = useState("");
   const [Description, setDescription] = useState("");
@@ -13,14 +14,42 @@ const Form = () => {
     console.log(mainTask);
   };
 
+  useEffect(() => {
+    const completeHandler = () => {};
+  });
+
+  const deleteHandler = (i) => {
+    let copyTask = [...mainTask];
+    copyTask.splice(i, 1);
+    setmainTask(copyTask);
+  };
+
   const renderTask = mainTask.map((t, i) => {
     return (
-      <li className="border-gray-800 border px-8 py-2 flex items-center justify-center">
+      <li
+        key={i}
+        className="border-gray-800 border px-8 py-2 flex items-center justify-center"
+      >
         <div className="w-full">
           <h5 className="text-gray-900 text-4xl">{t.Task}</h5>
           <p>{t.Description}</p>
         </div>
-        <button className="justify-end bg-red-500 w-20 h-10">Delete</button>
+        <button
+          className="justify-end bg-green-500 w-28 h-10 font-semibold rounded m-5"
+          onClick={() => {
+            completeHandler();
+          }}
+        >
+          Completed
+        </button>
+        <button
+          className="justify-end bg-red-500 w-20 h-10 font-semibold rounded"
+          onClick={() => {
+            deleteHandler();
+          }}
+        >
+          Delete
+        </button>
       </li>
     );
   });

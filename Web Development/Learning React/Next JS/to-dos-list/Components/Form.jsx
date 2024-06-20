@@ -1,44 +1,29 @@
 "use client";
 import React, { useState } from "react";
-import { useEffect } from "react";
 const Form = () => {
   const [Task, setTask] = useState("");
   const [Description, setDescription] = useState("");
   const [mainTask, setmainTask] = useState([]);
 
-  useEffect(() => {
-    const btn = document.querySelector("#btn");
-    const input = document.querySelector("#Description");
-    input.addEventListener("keypress", function (event) {
-      if (event.key === "Enter") {
-        event.preventDefault();
-        btn.click();
-      }
-    });
-  });
-
   const submitHandler = (e) => {
     e.preventDefault();
-    setmainTask([...mainTask, { task, description }]);
+    setmainTask([...mainTask, { Task, Description }]);
     setTask("");
     setDescription("");
     console.log(mainTask);
   };
 
-  let renderTask = <h2>Task Not Available</h2>;
-
-  renderTask = () => {
-    mainTask.map((t, i) => {
-      return (
-        <>
-          <div className="flex">
-            <h5>{t.task}</h5>
-            <h6>{t.description}</h6>
-          </div>
-        </>
-      );
-    });
-  };
+  const renderTask = mainTask.map((t, i) => {
+    return (
+      <li className="border-gray-800 border px-8 py-2 flex items-center justify-center">
+        <div className="w-full">
+          <h5 className="text-gray-900 text-4xl">{t.Task}</h5>
+          <p>{t.Description}</p>
+        </div>
+        <button className="justify-end bg-red-500 w-20 h-10">Delete</button>
+      </li>
+    );
+  });
 
   return (
     <>
@@ -50,6 +35,7 @@ const Form = () => {
           type="text"
           placeholder="Enter Your Task Here"
           className="px-4 w-52 rounded-x h-8 border-2 border-zinc-700 rounded m-3 outline-none border-none"
+          id="Task"
           autoComplete="off"
           value={Task}
           onChange={(e) => {
@@ -75,7 +61,7 @@ const Form = () => {
         </button>
       </form>
       <section className=" bg-slate-600 h-full">
-        <div className=" bg-slate-600 text-white">{renderTask}</div>
+        <ul>{renderTask}</ul>
       </section>
     </>
   );

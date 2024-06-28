@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <>
       <header>
-        <div id="heading">A.I Chatbot</div>
+        <div id="heading">A.I Chatbot | Aadeesh Jain</div>
       </header>
     </>
   );

@@ -1,15 +1,28 @@
 "use client";
 import React from "react";
 
-enum userRoles {
-  ADMIN = "Aadeesh Jain",
-  Student = "Darshna",
+interface User {
+  Name: string;
+  Phone_Number: number;
+  Email: string;
+  Password: string;
+  Gender?: string;
 }
+
+interface Admin extends User {
+  Admin: boolean;
+}
+
+const a = (obj: User) => {
+  return obj.Email;
+};
+
+const b = a({ Email: "aadeeshjain@gmail.com" });
 
 const page = () => {
   return (
     <>
-      <div>{userRoles.ADMIN}</div>
+      <div>{b}</div>
     </>
   );
 };

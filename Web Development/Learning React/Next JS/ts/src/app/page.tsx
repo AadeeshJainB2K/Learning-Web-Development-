@@ -5,11 +5,21 @@ class song {
   constructor(
     public name: string,
     public artist: string,
-    public thumbnail?: string,
     public time: number,
-    public isFree: boolean
+    public isFree: boolean,
+    public thumbnail?: string
   ) {}
 }
+
+const jattDontCare: object = new song(
+  "jattDontCare",
+  "abc",
+  2,
+  true,
+  "abcd.png"
+);
+
+console.log(jattDontCare);
 
 const page = () => {
   return (

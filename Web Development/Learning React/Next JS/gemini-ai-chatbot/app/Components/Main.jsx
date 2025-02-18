@@ -30,7 +30,7 @@ const MainApp = ({ GEMINI_API_KEY }) => {
     const response = await axios.post(LLAMA_API_URL, {
       model: "llama3",
       messages: [{ role: "user", content: prompt }],
-      stream: false,
+      stream: true,
     });
     return {
       model: "LLaMA 3",

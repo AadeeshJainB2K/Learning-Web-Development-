@@ -104,7 +104,7 @@ const MainApp = ({ GEMINI_API_KEY }) => {
               border: "none",
               borderRadius: "50%",
               cursor: "pointer",
-              fontSize: "14px",
+              fontSize: "100%",
               fontWeight: "bold",
               boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.2)",
               width: "40px", // Adjust the size to make it a small circle
@@ -145,14 +145,6 @@ const MainApp = ({ GEMINI_API_KEY }) => {
               boxShadow: "0 2px 5px rgba(0, 0, 0, 0.3)",
               transition: "background-color 0.3s ease",
             }}
-            onMouseOver={(e) =>
-              (e.target.style.backgroundColor = useLlama
-                ? "darkred"
-                : "#45a049")
-            }
-            onMouseOut={(e) =>
-              (e.target.style.backgroundColor = useLlama ? "red" : "#4CAF50")
-            }
           >
             <i className="fa-solid fa-arrow-up-from-bracket"></i>
           </button>

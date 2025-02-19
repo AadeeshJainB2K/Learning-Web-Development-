@@ -1,0 +1,152 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Inconsolata", monospace;
+}
+
+body {
+  min-height: 100vh;
+  background: rgba(0, 127, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background-image: url(./Components/windows-11-dark-mode-abstract-background-black-background-3840x2160-8710.jpg);
+  background-size: cover;
+}
+
+.inconsolata {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+#heading {
+  color: white;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6vh;
+  font-family: "Inconsolata", monospace;
+  background: rgba(0, 0, 0, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(107, 107, 107, 0.637);
+  -webkit-backdrop-filter: blur(9px);
+  backdrop-filter: blur(9px);
+  border-radius: 10px;
+  border: 0.1vh solid rgba(255, 255, 255, 0.18);
+  margin-bottom: 6vh;
+}
+
+#resultArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: calc(
+    100vh - 20vh - 10vh - 6vh
+  ); /* Calculate height based on other elements */
+  color: white;
+}
+
+.result {
+  padding-top: 4vh;
+  margin: 0 7vw;
+  font-size: 4vh; /* Adjust font size for smaller screens */
+  color: white;
+  font-weight: 500;
+  font-family: "Inconsolata", monospace;
+  overflow-y: auto;
+  max-height: 100%;
+  width: 100%;
+}
+
+#inputField {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#promptInput {
+  display: inline;
+  outline: none;
+  border-radius: 12vh;
+  height: 5vh;
+  width: 50vw;
+  padding-left: 1vw;
+  padding-right: 3vw;
+  background: rgba(0, 0, 0, 0.363);
+  box-shadow: 0 8px 32px 0 rgba(107, 107, 107, 0.637);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: rgb(167, 167, 167);
+  font-size: 2vh;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border-radius: 12vh;
+  height: 5vh;
+  width: 7vw;
+  background-color: #e52227;
+  box-shadow: 0 8px 32px 0 rgba(107, 107, 107, 0.637);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+  z-index: 2;
+  right: 20%;
+  font-size: 3vh;
+  cursor: pointer;
+  position: absolute;
+}
+
+#result {
+  border: none;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-weight: 600;
+  color: white;
+  font-size: 2.5vh; /* Adjust font size for better readability */
+  overflow-y: auto;
+}
+
+#result::-webkit-scrollbar {
+  background: rgba(0, 0, 0, 0.363);
+  box-shadow: 0 8px 32px 0 rgba(107, 107, 107, 0.637);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+  width: 0.7vw;
+}
+
+#result::-webkit-scrollbar-thumb {
+  width: 0.7vw;
+  background: rgba(0, 0, 0, 0.363);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+}
+
+nextjs-portal {
+  display: none;
+}

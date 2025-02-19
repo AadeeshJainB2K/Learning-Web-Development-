@@ -116,8 +116,8 @@ const MainApp = ({ GEMINI_API_KEY }) => {
           <button
             onClick={() => setUseLlama(!useLlama)}
             style={{
-              width: "40px",
-              height: "40px",
+              width: "100%",
+              height: "100%",
               borderRadius: "50%",
               backgroundColor: useLlama ? "red" : "green",
               color: "white",
@@ -149,19 +149,9 @@ const MainApp = ({ GEMINI_API_KEY }) => {
             id="btn"
             onClick={getResponse}
             style={{
-              width: "50px",
-              height: "50px",
-              borderRadius: "50%",
               backgroundColor: useLlama ? "red" : "#4CAF50",
-              color: "white",
-              border: "none",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              fontSize: "20px",
-              cursor: "grab",
-              boxShadow: "0 2px 5px rgba(0, 0, 0, 0.3)",
               transition: "background-color 0.3s ease",
+              boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.2)",
             }}
             onMouseDown={(e) => (e.target.style.cursor = "grabbing")}
             onMouseUp={(e) => (e.target.style.cursor = "grab")}

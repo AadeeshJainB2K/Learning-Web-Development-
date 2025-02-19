@@ -15,69 +15,87 @@ const MainApp = ({ GEMINI_API_KEY }) => {
       }
     };
 
-    document
-      .querySelector("#promptInput")
-      .addEventListener("keypress", handleKeyPress);
-    return () =>
-      document
-        .querySelector("#promptInput")
-        .removeEventListener("keypress", handleKeyPress);
+    const inputElement = document.querySelector("#promptInput");
+    inputElement.addEventListener("keypress", handleKeyPress);
+    return () => inputElement.removeEventListener("keypress", handleKeyPress);
   }, []);
 
   const fetchLlamaResponse = async () => {
     if (!useLlama) return null;
-    const startTime = performance.now();
-    const response = await axios.post(LLAMA_API_URL, {
-      model: "llama3",
-      messages: [{ role: "user", content: prompt }],
-      stream: true,
-    });
-    return {
-      model: "LLaMA 3",
-      text: response.data.message.content,
-      time: performance.now() - startTime,
-    };
+    try {
+      const startTime = performance.now();
+      const response = await axios.post(LLAMA_API_URL, {
+        model: "llama3",
+        messages: [{ role: "user", content: prompt }],
+        stream: false,
+      });
+      return {
+        model: "LLaMA 3",
+        text: response.data.message.content,
+        time: performance.now() - startTime,
+      };
+    } catch (error) {
+      console.error("LLaMA API Error:", error);
+      return null;
+    }
   };
 
   const fetchGeminiResponse = async () => {
-    const startTime = performance.now();
-    const response = await axios.post(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${GEMINI_API_KEY}`,
-      { contents: [{ parts: [{ text: prompt }] }] }
-    );
-    return {
-      model: "Gemini",
-      text: response.data.candidates[0].content.parts[0].text,
-      time: performance.now() - startTime,
-    };
+    try {
+      const startTime = performance.now();
+      const response = await axios.post(
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${GEMINI_API_KEY}`,
+        { contents: [{ parts: [{ text: prompt }] }] }
+      );
+      return {
+        model: "Gemini",
+        text: response.data.candidates[0].content.parts[0].text,
+        time: performance.now() - startTime,
+      };
+    } catch (error) {
+      console.error("Gemini API Error:", error);
+      return null;
+    }
   };
 
   const getResponse = async () => {
     setAnswer("Loading...");
+    try {
+      const requests = [fetchGeminiResponse()];
+      if (useLlama) requests.push(fetchLlamaResponse());
 
-    const requests = [fetchGeminiResponse()];
-    if (useLlama) requests.push(fetchLlamaResponse());
+      Promise.allSettled(requests)
+        .then((results) => {
+          console.log("API Responses:", results);
+          const validResponses = results
+            .filter((res) => res.status === "fulfilled" && res.value)
+            .map((res) => res.value);
+          validResponses.sort((a, b) => a.time - b.time);
 
-    Promise.allSettled(requests).then((results) => {
-      const validResponses = results
-        .filter((res) => res.status === "fulfilled" && res.value)
-        .map((res) => res.value);
-      validResponses.sort((a, b) => a.time - b.time);
-
-      if (validResponses.length > 0) {
-        setAnswer(`${validResponses[0].text} \n\n(${validResponses[0].model})`);
-        if (validResponses.length > 1) {
-          setTimeout(() => {
+          if (validResponses.length > 0) {
             setAnswer(
-              (prev) =>
-                `${prev}\n\n${validResponses[1].text} \n\n(${validResponses[1].model})`
+              `${validResponses[0].text} \n\n(${validResponses[0].model})`
             );
-          }, 500);
-        }
-      } else {
-        setAnswer("Failed to fetch response.");
-      }
-    });
+            if (validResponses.length > 1) {
+              setTimeout(() => {
+                setAnswer(
+                  (prev) =>
+                    `${prev}\n\n${validResponses[1].text} \n\n(${validResponses[1].model})`
+                );
+              }, 500);
+            }
+          } else {
+            setAnswer("Failed to fetch response.");
+          }
+        })
+        .catch((error) => {
+          console.error("Error in API Requests:", error);
+          setAnswer("Failed to fetch response.");
+        });
+    } catch (error) {
+      console.error("Unexpected Error:", error);
+      setAnswer("Failed to fetch response.");
+    }
   };
 
   return (
@@ -98,23 +116,23 @@ const MainApp = ({ GEMINI_API_KEY }) => {
           <button
             onClick={() => setUseLlama(!useLlama)}
             style={{
-              padding: "10px 16px",
+              width: "40px",
+              height: "40px",
+              borderRadius: "50%",
               backgroundColor: useLlama ? "red" : "green",
               color: "white",
               border: "none",
-              borderRadius: "50%",
-              cursor: "pointer",
-              fontSize: "100%",
-              fontWeight: "bold",
-              boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.2)",
-              width: "40px", // Adjust the size to make it a small circle
-              height: "40px", // Ensure it's perfectly round
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
+              fontSize: "12px",
+              fontWeight: "bold",
+              boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.2)",
+              cursor: "pointer",
+              transition: "background-color 0.3s ease",
             }}
           >
-            {useLlama ? "Disable LLaMA" : "Enable LLaMA"}
+            {useLlama ? "❌" : "✔"}
           </button>
         </div>
 
@@ -131,20 +149,22 @@ const MainApp = ({ GEMINI_API_KEY }) => {
             id="btn"
             onClick={getResponse}
             style={{
-              width: "50px", // Small circle
-              height: "50px", // Small circle
-              borderRadius: "50%", // Make it circular
-              backgroundColor: useLlama ? "red" : "#4CAF50", // Color changes based on LLaMA state
+              width: "50px",
+              height: "50px",
+              borderRadius: "50%",
+              backgroundColor: useLlama ? "red" : "#4CAF50",
               color: "white",
               border: "none",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
               fontSize: "20px",
-              cursor: "pointer", // Ensures fist cursor on hover
+              cursor: "grab",
               boxShadow: "0 2px 5px rgba(0, 0, 0, 0.3)",
               transition: "background-color 0.3s ease",
             }}
+            onMouseDown={(e) => (e.target.style.cursor = "grabbing")}
+            onMouseUp={(e) => (e.target.style.cursor = "grab")}
           >
             <i className="fa-solid fa-arrow-up-from-bracket"></i>
           </button>

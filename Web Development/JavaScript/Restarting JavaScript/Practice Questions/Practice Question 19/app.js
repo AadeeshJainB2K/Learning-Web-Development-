@@ -1,5 +1,7 @@
-mainaHeading = document.querySelector("#mainHeading");
+let boxes = document.querySelectorAll(".box");
 
-console.log(mainaHeading);
+console.log(boxes);
 
-mainaHeading.innerText += " form ApnaCollege";
+for (let i = 0; i <= 3; i++) {
+  boxes[i].innerText = i;
+}

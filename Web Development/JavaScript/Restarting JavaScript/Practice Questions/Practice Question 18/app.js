@@ -1,4 +1,4 @@
-mainaHeading = document.querySelector("#mainHeading");
+let mainaHeading = document.querySelector("#mainHeading");
 
 console.log(mainaHeading);
 

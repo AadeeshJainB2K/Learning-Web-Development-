@@ -1,9 +1,7 @@
-const profile = {
-  userName: shradhakhapra,
-  isFollowing: false,
-  numberOfPosts: 195,
-  numberOfFollowers: 569000,
-  numberOfFollowing: 4,
-  profession: Entrepreneur,
-  bio: "To educate someone is a privillage",
-};
+let num = prompt("enter a number to check if it's divisilbe by 5 : ");
+
+if (num % 5 === 0) {
+  alert("The number is divisible by 5");
+} else {
+  alert("The number is not divisible by 5");
+}

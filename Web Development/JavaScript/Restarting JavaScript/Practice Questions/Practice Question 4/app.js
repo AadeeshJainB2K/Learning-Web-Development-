@@ -1,4 +1,4 @@
-marks = prompt("enter your marks : ");
+let marks = prompt("enter your marks : ");
 
 if (marks >= 90 && marks <= 100) {
   alert("A");

@@ -6,5 +6,6 @@ const pen = {
   isDealOfTheDay: false,
   MRP: 285,
   discount: 5,
-  sellingPrice: (MRP * discount) / 100,
 };
+
+pen.sellingPrice = pen.MRP - (pen.MRP * pen.discount) / 100;

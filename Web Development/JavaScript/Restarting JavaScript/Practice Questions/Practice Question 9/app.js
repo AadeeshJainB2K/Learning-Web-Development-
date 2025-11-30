@@ -1,7 +1,7 @@
 let marks = [85, 97, 44, 37, 76, 60];
 let avg = 0;
 
-for (i of marks) {
+for (let i of marks) {
   avg += i;
 }
 

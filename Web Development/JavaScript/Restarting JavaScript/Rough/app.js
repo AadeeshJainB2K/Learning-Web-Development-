@@ -1,6 +1,7 @@
 let arr = [1, 2, 3, 4, 5, 6, 6, 7, 8, 9];
 
-newArr = arr.map((a) => {
-  return a ** 2;
+let output = arr.reduce((result, current) => {
+  return result > current ? result : current;
 });
-console.log(newArr);
+
+console.log(output);

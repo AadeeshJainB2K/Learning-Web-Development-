@@ -1,6 +1,6 @@
 let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-evenArr = arr.filter((a) => {
+let evenArr = arr.filter((a) => {
   return a % 2 === 0;
 });
 

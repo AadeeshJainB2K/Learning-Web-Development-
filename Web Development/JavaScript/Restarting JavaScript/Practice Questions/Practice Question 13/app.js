@@ -1,6 +1,6 @@
 const numberOfVowels = (str) => {
-  count = 0;
-  s = str.trim().toLowerCase();
+  let count = 0;
+  let s = str.trim().toLowerCase();
   for (let i of s) {
     if (i === "a" || i === "e" || i === "i" || i === "o" || i === "u") {
       count++;

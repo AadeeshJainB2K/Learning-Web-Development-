@@ -1,4 +1,5 @@
-let mainaHeading = document.querySelector("#mainHeading");
-mainaHeading.innerText = "its good";
+let modeToggleBtn = document.querySelector("#toggleMode");
 
-console.log(mainaHeading.innerText);
+modeToggleBtn.style.backgroundColor = "blue";
+
+modeToggleBtn.remove();

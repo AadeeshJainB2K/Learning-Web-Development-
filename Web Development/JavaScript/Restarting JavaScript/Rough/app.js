@@ -1,11 +1,4 @@
-const sum = (a, b) => {
-  return a + b;
-};
-
-const product = (a, b) => {
-  return a * b;
-};
-
-console.log(sum(1, 8), product(5, 6));
-
-console.log(sum);
+let arr = [1, 2, 3, 4, 5, 6, 6, 7, 8, 9];
+arr.forEach(function print(a) {
+  console.log(a ** a);
+});

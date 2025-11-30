@@ -1,5 +1,4 @@
-let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-for (let i of array) {
-  console.log(i);
-}
+let marvel = ["thor", "ironman", "spiderman", "antman", "dr. strange"];
+let dc = ["batman", "superman"];
+marvel.splice(2, 1, "shaktimaan");
+console.log(marvel);
